@@ -1,0 +1,2404 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mingw32-make.exe"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "c:/MinGW/bin/"
+      - "/MinGW/bin/"
+      - "/REGISTRY-NOTFOUND/MinGW/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/mingw32-make.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/mingw32-make.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/mingw32-make.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/mingw32-make.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/mingw32-make.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/mingw32-make.exe"
+      - "C:/Windows/System32/mingw32-make.exe.com"
+      - "C:/Windows/System32/mingw32-make.exe"
+      - "C:/Windows/mingw32-make.exe.com"
+      - "C:/Windows/mingw32-make.exe"
+      - "C:/Windows/System32/wbem/mingw32-make.exe.com"
+      - "C:/Windows/System32/wbem/mingw32-make.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe.com"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mingw32-make.exe"
+      - "C:/TDM-GCC-64/bin/mingw32-make.exe.com"
+    found: "C:/TDM-GCC-64/bin/mingw32-make.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/cc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/cc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/cc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/cl.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/cl.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/cl"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/bcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/bcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/bcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/xlc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/xlc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/xlc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/icx.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/icx.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/icx"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/clang.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/clang.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/clang"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/cc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/cc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/cc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/cl.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/cl.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/cl"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/bcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/bcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/bcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/xlc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/xlc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/xlc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/icx.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/icx.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/icx"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/clang.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/clang.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/clang"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/cc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/cc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/cc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/cl.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/cl.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/cl"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/bcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/bcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/bcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/xlc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/xlc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/xlc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/icx.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/icx.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/icx"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/clang.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/clang.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/clang"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/cc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/cc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/cc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/cl.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/cl.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/cl"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/bcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/bcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/bcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/xlc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/xlc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/xlc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/icx.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/icx.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/icx"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/clang.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/clang.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/clang"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/cc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/cc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/cc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/cl.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/cl.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/cl"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/xlc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/xlc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/xlc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/icx.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/icx.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/icx"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/clang.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/clang.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/clang"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/cc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/cc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/cc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/cl.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/cl.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/cl"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/bcc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/bcc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/bcc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/xlc.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/xlc.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/xlc"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/icx.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/icx.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/icx"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/clang.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/clang.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/clang"
+      - "C:/Windows/System32/cc.com"
+      - "C:/Windows/System32/cc.exe"
+      - "C:/Windows/System32/cc"
+      - "C:/Windows/System32/gcc.com"
+      - "C:/Windows/System32/gcc.exe"
+      - "C:/Windows/System32/gcc"
+      - "C:/Windows/System32/cl.com"
+      - "C:/Windows/System32/cl.exe"
+      - "C:/Windows/System32/cl"
+      - "C:/Windows/System32/bcc.com"
+      - "C:/Windows/System32/bcc.exe"
+      - "C:/Windows/System32/bcc"
+      - "C:/Windows/System32/xlc.com"
+      - "C:/Windows/System32/xlc.exe"
+      - "C:/Windows/System32/xlc"
+      - "C:/Windows/System32/icx.com"
+      - "C:/Windows/System32/icx.exe"
+      - "C:/Windows/System32/icx"
+      - "C:/Windows/System32/clang.com"
+      - "C:/Windows/System32/clang.exe"
+      - "C:/Windows/System32/clang"
+      - "C:/Windows/cc.com"
+      - "C:/Windows/cc.exe"
+      - "C:/Windows/cc"
+      - "C:/Windows/gcc.com"
+      - "C:/Windows/gcc.exe"
+      - "C:/Windows/gcc"
+      - "C:/Windows/cl.com"
+      - "C:/Windows/cl.exe"
+      - "C:/Windows/cl"
+      - "C:/Windows/bcc.com"
+      - "C:/Windows/bcc.exe"
+      - "C:/Windows/bcc"
+      - "C:/Windows/xlc.com"
+      - "C:/Windows/xlc.exe"
+      - "C:/Windows/xlc"
+      - "C:/Windows/icx.com"
+      - "C:/Windows/icx.exe"
+      - "C:/Windows/icx"
+      - "C:/Windows/clang.com"
+      - "C:/Windows/clang.exe"
+      - "C:/Windows/clang"
+      - "C:/Windows/System32/wbem/cc.com"
+      - "C:/Windows/System32/wbem/cc.exe"
+      - "C:/Windows/System32/wbem/cc"
+      - "C:/Windows/System32/wbem/gcc.com"
+      - "C:/Windows/System32/wbem/gcc.exe"
+      - "C:/Windows/System32/wbem/gcc"
+      - "C:/Windows/System32/wbem/cl.com"
+      - "C:/Windows/System32/wbem/cl.exe"
+      - "C:/Windows/System32/wbem/cl"
+      - "C:/Windows/System32/wbem/bcc.com"
+      - "C:/Windows/System32/wbem/bcc.exe"
+      - "C:/Windows/System32/wbem/bcc"
+      - "C:/Windows/System32/wbem/xlc.com"
+      - "C:/Windows/System32/wbem/xlc.exe"
+      - "C:/Windows/System32/wbem/xlc"
+      - "C:/Windows/System32/wbem/icx.com"
+      - "C:/Windows/System32/wbem/icx.exe"
+      - "C:/Windows/System32/wbem/icx"
+      - "C:/Windows/System32/wbem/clang.com"
+      - "C:/Windows/System32/wbem/clang.exe"
+      - "C:/Windows/System32/wbem/clang"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang"
+      - "C:/Windows/System32/OpenSSH/cc.com"
+      - "C:/Windows/System32/OpenSSH/cc.exe"
+      - "C:/Windows/System32/OpenSSH/cc"
+      - "C:/Windows/System32/OpenSSH/gcc.com"
+      - "C:/Windows/System32/OpenSSH/gcc.exe"
+      - "C:/Windows/System32/OpenSSH/gcc"
+      - "C:/Windows/System32/OpenSSH/cl.com"
+      - "C:/Windows/System32/OpenSSH/cl.exe"
+      - "C:/Windows/System32/OpenSSH/cl"
+      - "C:/Windows/System32/OpenSSH/bcc.com"
+      - "C:/Windows/System32/OpenSSH/bcc.exe"
+      - "C:/Windows/System32/OpenSSH/bcc"
+      - "C:/Windows/System32/OpenSSH/xlc.com"
+      - "C:/Windows/System32/OpenSSH/xlc.exe"
+      - "C:/Windows/System32/OpenSSH/xlc"
+      - "C:/Windows/System32/OpenSSH/icx.com"
+      - "C:/Windows/System32/OpenSSH/icx.exe"
+      - "C:/Windows/System32/OpenSSH/icx"
+      - "C:/Windows/System32/OpenSSH/clang.com"
+      - "C:/Windows/System32/OpenSSH/clang.exe"
+      - "C:/Windows/System32/OpenSSH/clang"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/cc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/cc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/cc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/cl.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/cl.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/cl"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/bcc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/bcc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/bcc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/xlc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/xlc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/xlc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/icx.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/icx.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/icx"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/clang.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/clang.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/clang"
+      - "C:/TDM-GCC-64/bin/cc.com"
+      - "C:/TDM-GCC-64/bin/cc.exe"
+      - "C:/TDM-GCC-64/bin/cc"
+      - "C:/TDM-GCC-64/bin/gcc.com"
+    found: "C:/TDM-GCC-64/bin/gcc.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/TDM-GCC-64/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/4.4.0/CompilerIdC/a.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/ar.com"
+    found: "C:/TDM-GCC-64/bin/ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/ranlib.com"
+    found: "C:/TDM-GCC-64/bin/ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/strip.com"
+    found: "C:/TDM-GCC-64/bin/strip.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/ld.com"
+    found: "C:/TDM-GCC-64/bin/ld.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/nm.com"
+    found: "C:/TDM-GCC-64/bin/nm.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/objdump.com"
+    found: "C:/TDM-GCC-64/bin/objdump.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/objcopy.com"
+    found: "C:/TDM-GCC-64/bin/objcopy.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/readelf.com"
+    found: "C:/TDM-GCC-64/bin/readelf.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/dlltool.com"
+    found: "C:/TDM-GCC-64/bin/dlltool.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/addr2line.com"
+    found: "C:/TDM-GCC-64/bin/addr2line.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/tapi.com"
+      - "C:/TDM-GCC-64/bin/tapi.exe"
+      - "C:/TDM-GCC-64/bin/tapi"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/tapi"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/tapi"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/tapi"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/tapi"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/tapi"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/tapi"
+      - "C:/Windows/System32/tapi.com"
+      - "C:/Windows/System32/tapi.exe"
+      - "C:/Windows/System32/tapi"
+      - "C:/Windows/tapi.com"
+      - "C:/Windows/tapi.exe"
+      - "C:/Windows/tapi"
+      - "C:/Windows/System32/wbem/tapi.com"
+      - "C:/Windows/System32/wbem/tapi.exe"
+      - "C:/Windows/System32/wbem/tapi"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
+      - "C:/Windows/System32/OpenSSH/tapi.com"
+      - "C:/Windows/System32/OpenSSH/tapi.exe"
+      - "C:/Windows/System32/OpenSSH/tapi"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi"
+      - "C:/Program Files/Tailscale/tapi.com"
+      - "C:/Program Files/Tailscale/tapi.exe"
+      - "C:/Program Files/Tailscale/tapi"
+      - "C:/Program Files/MATLAB/R2025b/bin/tapi.com"
+      - "C:/Program Files/MATLAB/R2025b/bin/tapi.exe"
+      - "C:/Program Files/MATLAB/R2025b/bin/tapi"
+      - "C:/Program Files/Git/cmd/tapi.com"
+      - "C:/Program Files/Git/cmd/tapi.exe"
+      - "C:/Program Files/Git/cmd/tapi"
+      - "C:/Program Files/dotnet/tapi.com"
+      - "C:/Program Files/dotnet/tapi.exe"
+      - "C:/Program Files/dotnet/tapi"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/tapi.com"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/tapi.exe"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/tapi"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi"
+      - "C:/Program Files/CMake/bin/tapi.com"
+      - "C:/Program Files/CMake/bin/tapi.exe"
+      - "C:/Program Files/CMake/bin/tapi"
+      - "C:/Users/nsanz/.local/bin/tapi.com"
+      - "C:/Users/nsanz/.local/bin/tapi.exe"
+      - "C:/Users/nsanz/.local/bin/tapi"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/tapi.com"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/tapi.exe"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/tapi"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/tapi.com"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/tapi.exe"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/tapi"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/tapi.com"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/tapi.exe"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-10.3"
+      - "gcc-ar-10"
+      - "gcc-ar10"
+      - "gcc-ar"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/gcc-ar-10.3.com"
+      - "C:/TDM-GCC-64/bin/gcc-ar-10.3.exe"
+      - "C:/TDM-GCC-64/bin/gcc-ar-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar-10.3"
+      - "C:/Windows/System32/gcc-ar-10.3.com"
+      - "C:/Windows/System32/gcc-ar-10.3.exe"
+      - "C:/Windows/System32/gcc-ar-10.3"
+      - "C:/Windows/gcc-ar-10.3.com"
+      - "C:/Windows/gcc-ar-10.3.exe"
+      - "C:/Windows/gcc-ar-10.3"
+      - "C:/Windows/System32/wbem/gcc-ar-10.3.com"
+      - "C:/Windows/System32/wbem/gcc-ar-10.3.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-10.3"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-10.3.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-10.3.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-10.3"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-10.3.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-10.3.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-10.3"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-10.3.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-10.3.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-10.3"
+      - "C:/Program Files/Tailscale/gcc-ar-10.3.com"
+      - "C:/Program Files/Tailscale/gcc-ar-10.3.exe"
+      - "C:/Program Files/Tailscale/gcc-ar-10.3"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar-10.3.com"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar-10.3.exe"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar-10.3"
+      - "C:/Program Files/Git/cmd/gcc-ar-10.3.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-10.3.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-10.3"
+      - "C:/Program Files/dotnet/gcc-ar-10.3.com"
+      - "C:/Program Files/dotnet/gcc-ar-10.3.exe"
+      - "C:/Program Files/dotnet/gcc-ar-10.3"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar-10.3.com"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar-10.3.exe"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar-10.3"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-10.3.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-10.3.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-10.3"
+      - "C:/Program Files/CMake/bin/gcc-ar-10.3.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-10.3.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-10.3"
+      - "C:/Users/nsanz/.local/bin/gcc-ar-10.3.com"
+      - "C:/Users/nsanz/.local/bin/gcc-ar-10.3.exe"
+      - "C:/Users/nsanz/.local/bin/gcc-ar-10.3"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar-10.3.com"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar-10.3.exe"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar-10.3"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-10.3.com"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-10.3.exe"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-10.3"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar-10.3.com"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar-10.3.exe"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar-10.3"
+      - "C:/TDM-GCC-64/bin/gcc-ar-10.com"
+      - "C:/TDM-GCC-64/bin/gcc-ar-10.exe"
+      - "C:/TDM-GCC-64/bin/gcc-ar-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar-10"
+      - "C:/Windows/System32/gcc-ar-10.com"
+      - "C:/Windows/System32/gcc-ar-10.exe"
+      - "C:/Windows/System32/gcc-ar-10"
+      - "C:/Windows/gcc-ar-10.com"
+      - "C:/Windows/gcc-ar-10.exe"
+      - "C:/Windows/gcc-ar-10"
+      - "C:/Windows/System32/wbem/gcc-ar-10.com"
+      - "C:/Windows/System32/wbem/gcc-ar-10.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-10"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-10.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-10.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-10"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-10.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-10.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-10"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-10.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-10.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-10"
+      - "C:/Program Files/Tailscale/gcc-ar-10.com"
+      - "C:/Program Files/Tailscale/gcc-ar-10.exe"
+      - "C:/Program Files/Tailscale/gcc-ar-10"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar-10.com"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar-10.exe"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar-10"
+      - "C:/Program Files/Git/cmd/gcc-ar-10.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-10.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-10"
+      - "C:/Program Files/dotnet/gcc-ar-10.com"
+      - "C:/Program Files/dotnet/gcc-ar-10.exe"
+      - "C:/Program Files/dotnet/gcc-ar-10"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar-10.com"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar-10.exe"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar-10"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-10.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-10.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-10"
+      - "C:/Program Files/CMake/bin/gcc-ar-10.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-10.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-10"
+      - "C:/Users/nsanz/.local/bin/gcc-ar-10.com"
+      - "C:/Users/nsanz/.local/bin/gcc-ar-10.exe"
+      - "C:/Users/nsanz/.local/bin/gcc-ar-10"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar-10.com"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar-10.exe"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar-10"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-10.com"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-10.exe"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-10"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar-10.com"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar-10.exe"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar-10"
+      - "C:/TDM-GCC-64/bin/gcc-ar10.com"
+      - "C:/TDM-GCC-64/bin/gcc-ar10.exe"
+      - "C:/TDM-GCC-64/bin/gcc-ar10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ar10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ar10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ar10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ar10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ar10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ar10"
+      - "C:/Windows/System32/gcc-ar10.com"
+      - "C:/Windows/System32/gcc-ar10.exe"
+      - "C:/Windows/System32/gcc-ar10"
+      - "C:/Windows/gcc-ar10.com"
+      - "C:/Windows/gcc-ar10.exe"
+      - "C:/Windows/gcc-ar10"
+      - "C:/Windows/System32/wbem/gcc-ar10.com"
+      - "C:/Windows/System32/wbem/gcc-ar10.exe"
+      - "C:/Windows/System32/wbem/gcc-ar10"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar10.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar10.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar10"
+      - "C:/Windows/System32/OpenSSH/gcc-ar10.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar10.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar10"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar10.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar10.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar10"
+      - "C:/Program Files/Tailscale/gcc-ar10.com"
+      - "C:/Program Files/Tailscale/gcc-ar10.exe"
+      - "C:/Program Files/Tailscale/gcc-ar10"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar10.com"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar10.exe"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ar10"
+      - "C:/Program Files/Git/cmd/gcc-ar10.com"
+      - "C:/Program Files/Git/cmd/gcc-ar10.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar10"
+      - "C:/Program Files/dotnet/gcc-ar10.com"
+      - "C:/Program Files/dotnet/gcc-ar10.exe"
+      - "C:/Program Files/dotnet/gcc-ar10"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar10.com"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar10.exe"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ar10"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar10.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar10.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar10"
+      - "C:/Program Files/CMake/bin/gcc-ar10.com"
+      - "C:/Program Files/CMake/bin/gcc-ar10.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar10"
+      - "C:/Users/nsanz/.local/bin/gcc-ar10.com"
+      - "C:/Users/nsanz/.local/bin/gcc-ar10.exe"
+      - "C:/Users/nsanz/.local/bin/gcc-ar10"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar10.com"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar10.exe"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ar10"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar10.com"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar10.exe"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar10"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar10.com"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar10.exe"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ar10"
+      - "C:/TDM-GCC-64/bin/gcc-ar.com"
+    found: "C:/TDM-GCC-64/bin/gcc-ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-10.3"
+      - "gcc-ranlib-10"
+      - "gcc-ranlib10"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+    searched_directories:
+      - "C:/TDM-GCC-64/bin/gcc-ranlib-10.3.com"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib-10.3.exe"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib-10.3"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib-10.3.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib-10.3.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib-10.3"
+      - "C:/Windows/System32/gcc-ranlib-10.3.com"
+      - "C:/Windows/System32/gcc-ranlib-10.3.exe"
+      - "C:/Windows/System32/gcc-ranlib-10.3"
+      - "C:/Windows/gcc-ranlib-10.3.com"
+      - "C:/Windows/gcc-ranlib-10.3.exe"
+      - "C:/Windows/gcc-ranlib-10.3"
+      - "C:/Windows/System32/wbem/gcc-ranlib-10.3.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-10.3.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-10.3"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-10.3.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-10.3.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-10.3"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-10.3.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-10.3.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-10.3"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-10.3.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-10.3.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-10.3"
+      - "C:/Program Files/Tailscale/gcc-ranlib-10.3.com"
+      - "C:/Program Files/Tailscale/gcc-ranlib-10.3.exe"
+      - "C:/Program Files/Tailscale/gcc-ranlib-10.3"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib-10.3.com"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib-10.3.exe"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib-10.3"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-10.3.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-10.3.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-10.3"
+      - "C:/Program Files/dotnet/gcc-ranlib-10.3.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-10.3.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-10.3"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib-10.3.com"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib-10.3.exe"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib-10.3"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-10.3.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-10.3.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-10.3"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-10.3.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-10.3.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-10.3"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib-10.3.com"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib-10.3.exe"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib-10.3"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-10.3.com"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-10.3.exe"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-10.3"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-10.3.com"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-10.3.exe"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-10.3"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib-10.3.com"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib-10.3.exe"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib-10.3"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib-10.com"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib-10.exe"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib-10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib-10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib-10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib-10"
+      - "C:/Windows/System32/gcc-ranlib-10.com"
+      - "C:/Windows/System32/gcc-ranlib-10.exe"
+      - "C:/Windows/System32/gcc-ranlib-10"
+      - "C:/Windows/gcc-ranlib-10.com"
+      - "C:/Windows/gcc-ranlib-10.exe"
+      - "C:/Windows/gcc-ranlib-10"
+      - "C:/Windows/System32/wbem/gcc-ranlib-10.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-10.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-10"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-10.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-10.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-10"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-10.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-10.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-10"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-10.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-10.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-10"
+      - "C:/Program Files/Tailscale/gcc-ranlib-10.com"
+      - "C:/Program Files/Tailscale/gcc-ranlib-10.exe"
+      - "C:/Program Files/Tailscale/gcc-ranlib-10"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib-10.com"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib-10.exe"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib-10"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-10.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-10.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-10"
+      - "C:/Program Files/dotnet/gcc-ranlib-10.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-10.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-10"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib-10.com"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib-10.exe"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib-10"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-10.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-10.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-10"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-10.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-10.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-10"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib-10.com"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib-10.exe"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib-10"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-10.com"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-10.exe"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-10"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-10.com"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-10.exe"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-10"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib-10.com"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib-10.exe"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib-10"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib10.com"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib10.exe"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/gcc-ranlib10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/gcc-ranlib10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/gcc-ranlib10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/gcc-ranlib10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/gcc-ranlib10"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib10.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib10.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/gcc-ranlib10"
+      - "C:/Windows/System32/gcc-ranlib10.com"
+      - "C:/Windows/System32/gcc-ranlib10.exe"
+      - "C:/Windows/System32/gcc-ranlib10"
+      - "C:/Windows/gcc-ranlib10.com"
+      - "C:/Windows/gcc-ranlib10.exe"
+      - "C:/Windows/gcc-ranlib10"
+      - "C:/Windows/System32/wbem/gcc-ranlib10.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib10.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib10"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib10.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib10.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib10"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib10.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib10.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib10"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib10.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib10.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib10"
+      - "C:/Program Files/Tailscale/gcc-ranlib10.com"
+      - "C:/Program Files/Tailscale/gcc-ranlib10.exe"
+      - "C:/Program Files/Tailscale/gcc-ranlib10"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib10.com"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib10.exe"
+      - "C:/Program Files/MATLAB/R2025b/bin/gcc-ranlib10"
+      - "C:/Program Files/Git/cmd/gcc-ranlib10.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib10.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib10"
+      - "C:/Program Files/dotnet/gcc-ranlib10.com"
+      - "C:/Program Files/dotnet/gcc-ranlib10.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib10"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib10.com"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib10.exe"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/gcc-ranlib10"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib10.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib10.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib10"
+      - "C:/Program Files/CMake/bin/gcc-ranlib10.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib10.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib10"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib10.com"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib10.exe"
+      - "C:/Users/nsanz/.local/bin/gcc-ranlib10"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib10.com"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib10.exe"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/gcc-ranlib10"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib10.com"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib10.exe"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib10"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib10.com"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib10.exe"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/gcc-ranlib10"
+      - "C:/TDM-GCC-64/bin/gcc-ranlib.com"
+    found: "C:/TDM-GCC-64/bin/gcc-ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake:2 (__windows_compiler_gnu)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "windres"
+      - "windres"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/TDM-GCC-64/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/MATLAB/R2025b/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Microsoft SQL Server/140/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/nsanz/.local/bin/"
+      - "C:/Users/nsanz/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/nsanz/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/nsanz/AppData/Local/Python/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/NeuralNetwork/bin/"
+      - "C:/Program Files (x86)/NeuralNetwork/sbin/"
+      - "C:/Program Files (x86)/NeuralNetwork/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/windres.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/windres.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/windres"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/windres.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/windres.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/libfabric/bin/utils/windres"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/windres.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/windres.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/bin/windres"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/windres.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/windres.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/ia32/windres"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/windres.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/windres.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/intel64/windres"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/windres.com"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/windres.exe"
+      - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/windres"
+      - "C:/Windows/System32/windres.com"
+      - "C:/Windows/System32/windres.exe"
+      - "C:/Windows/System32/windres"
+      - "C:/Windows/windres.com"
+      - "C:/Windows/windres.exe"
+      - "C:/Windows/windres"
+      - "C:/Windows/System32/wbem/windres.com"
+      - "C:/Windows/System32/wbem/windres.exe"
+      - "C:/Windows/System32/wbem/windres"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres"
+      - "C:/Windows/System32/OpenSSH/windres.com"
+      - "C:/Windows/System32/OpenSSH/windres.exe"
+      - "C:/Windows/System32/OpenSSH/windres"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/windres.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/windres.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/windres"
+      - "C:/TDM-GCC-64/bin/windres.com"
+    found: "C:/TDM-GCC-64/bin/windres.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\libfabric\\bin\\utils"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64\\bin"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\ia32"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\intel64"
+        - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\MATLAB\\R2025b\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\nsanz\\.local\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\nsanz\\AppData\\Local\\Python\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/NeuralNetwork"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/NeuralNetwork"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/CMakeScratch/TryCompile-gpnxwl"
+      binary: "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/CMakeScratch/TryCompile-gpnxwl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/CMakeScratch/TryCompile-gpnxwl'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_0a017/fast
+        C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0a017.dir\\build.make CMakeFiles/cmTC_0a017.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/CMakeScratch/TryCompile-gpnxwl'
+        Building C object CMakeFiles/cmTC_0a017.dir/CMakeCCompilerABI.c.obj
+        C:\\TDM-GCC-64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\TDM-GCC-64\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-git-10.3.0/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,jit,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --enable-libstdcxx-threads --enable-libstdcxx-time=yes --enable-mingw-wildcard --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --enable-large-address-aware --disable-rpath --disable-symvers --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=https://github.com/jmeubank/tdm-gcc/issues
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 10.3.0 (tdm64-1) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccBSPelt.s
+        GNU C17 (tdm64-1) version 10.3.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.23-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/TDM-GCC-64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/10.3.0/include"
+        ignoring duplicate directory "C:/TDM-GCC-64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"
+        ignoring duplicate directory "C:/TDM-GCC-64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"
+        ignoring duplicate directory "C:/TDM-GCC-64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include
+         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include
+         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed
+         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        GNU C17 (tdm64-1) version 10.3.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.23-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 68074fcaab9f6b1377b55f7cea05149b
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccBSPelt.s
+        GNU assembler version 2.36.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.36.1
+        COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../libexec/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../lib/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_0a017.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_0a017.dir\\link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=C:\\TDM-GCC-64\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-git-10.3.0/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,jit,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --enable-libstdcxx-threads --enable-libstdcxx-time=yes --enable-mingw-wildcard --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --enable-large-address-aware --disable-rpath --disable-symvers --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=https://github.com/jmeubank/tdm-gcc/issues
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 10.3.0 (tdm64-1) 
+        COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../libexec/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/;C:/TDM-GCC-64/bin/../lib/gcc/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/;C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a017.exe' '-mtune=generic' '-march=x86-64'
+         C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccx4sK3O.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_0a017.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0a017.dir/objects.a --no-whole-archive --out-implib libcmTC_0a017.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o
+        collect2 version 10.3.0
+        C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccx4sK3O.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_0a017.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0a017.dir/objects.a --no-whole-archive --out-implib libcmTC_0a017.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o
+        GNU ld (GNU Binutils) 2.36.1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a017.exe' '-mtune=generic' '-march=x86-64'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_0a017.dir/objects.a
+        C:\\TDM-GCC-64\\bin\\ar.exe qc CMakeFiles\\cmTC_0a017.dir/objects.a @CMakeFiles\\cmTC_0a017.dir\\objects1.rsp
+        C:\\TDM-GCC-64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_0a017.dir/objects.a -Wl,--no-whole-archive -o cmTC_0a017.exe -Wl,--out-implib,libcmTC_0a017.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/CMakeScratch/TryCompile-gpnxwl'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include]
+          add: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include]
+          add: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed]
+          add: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include] ==> [C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include]
+        collapse include dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include] ==> [C:/TDM-GCC-64/include]
+        collapse include dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed] ==> [C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed]
+        collapse include dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include] ==> [C:/TDM-GCC-64/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include;C:/TDM-GCC-64/include;C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed;C:/TDM-GCC-64/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/CMakeScratch/TryCompile-gpnxwl']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/TDM-GCC-64/bin/mingw32-make.exe -f Makefile cmTC_0a017/fast]
+        ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0a017.dir\\build.make CMakeFiles/cmTC_0a017.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/CMakeScratch/TryCompile-gpnxwl']
+        ignore line: [Building C object CMakeFiles/cmTC_0a017.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\TDM-GCC-64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\TDM-GCC-64\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-git-10.3.0/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,jit,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --enable-libstdcxx-threads --enable-libstdcxx-time=yes --enable-mingw-wildcard --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --enable-large-address-aware --disable-rpath --disable-symvers --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=https://github.com/jmeubank/tdm-gcc/issues]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 10.3.0 (tdm64-1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/cc1.exe -quiet -v -iprefix C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccBSPelt.s]
+        ignore line: [GNU C17 (tdm64-1) version 10.3.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.23-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/TDM-GCC-64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/10.3.0/include"]
+        ignore line: [ignoring duplicate directory "C:/TDM-GCC-64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/TDM-GCC-64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/TDM-GCC-64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include]
+        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include]
+        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed]
+        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (tdm64-1) version 10.3.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.23-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 68074fcaab9f6b1377b55f7cea05149b]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccBSPelt.s]
+        ignore line: [GNU assembler version 2.36.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.36.1]
+        ignore line: [COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/]
+        ignore line: [C:/TDM-GCC-64/bin/../libexec/gcc/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0a017.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_0a017.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_0a017.dir\\link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\TDM-GCC-64\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-git-10.3.0/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,jit,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --enable-libstdcxx-threads --enable-libstdcxx-time=yes --enable-mingw-wildcard --with-gnu-ld --disable-werror --enable-nls --disable-win32-registry --enable-large-address-aware --disable-rpath --disable-symvers --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=https://github.com/jmeubank/tdm-gcc/issues]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 10.3.0 (tdm64-1) ]
+        ignore line: [COMPILER_PATH=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/]
+        ignore line: [C:/TDM-GCC-64/bin/../libexec/gcc/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a017.exe' '-mtune=generic' '-march=x86-64']
+        link line: [ C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccx4sK3O.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_0a017.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0a017.dir/objects.a --no-whole-archive --out-implib libcmTC_0a017.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
+          arg [C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll] ==> ignore
+          arg [-plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccx4sK3O.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [--exclude-libs=libpthread.a] ==> ignore
+          arg [--undefined=__xl_f] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_0a017.exe] ==> ignore
+          arg [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o] ==> obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o]
+          arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0]
+          arg [-LC:/TDM-GCC-64/bin/../lib/gcc] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc]
+          arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib]
+          arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../..] ==> dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../..]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_0a017.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_0a017.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o] ==> obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o]
+          arg [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o] ==> obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
+        ignore line: [collect2 version 10.3.0]
+        link line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccx4sK3O.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_0a017.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0a017.dir/objects.a --no-whole-archive --out-implib libcmTC_0a017.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o] ==> linker [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe]
+        link line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccx4sK3O.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_0a017.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0a017.dir/objects.a --no-whole-archive --out-implib libcmTC_0a017.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        ignore line: [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/liblto_plugin-0.dll -plugin-opt=C:/TDM-GCC-64/bin/../libexec/gcc/x86_64-w64-mingw32/10.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nsanz\\AppData\\Local\\Temp\\ccx4sK3O.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep --exclude-libs=libpthread.a --undefined=__xl_f -Bdynamic -o cmTC_0a017.exe C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0 -LC:/TDM-GCC-64/bin/../lib/gcc -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib -LC:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0a017.dir/objects.a --no-whole-archive --out-implib libcmTC_0a017.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lpthread -lgcc -lkernel32 -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
+        linker tool for 'C': C:/TDM-GCC-64/x86_64-w64-mingw32/bin/ld.exe -m;i386pep
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [C:/TDM-GCC-64/x86_64-w64-mingw32/lib/crt2.o]
+        collapse obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o] ==> [C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o]
+        collapse obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o] ==> [C:/TDM-GCC-64/x86_64-w64-mingw32/lib/default-manifest.o]
+        collapse obj [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o] ==> [C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
+        collapse library dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0] ==> [C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0]
+        collapse library dir [C:/TDM-GCC-64/bin/../lib/gcc] ==> [C:/TDM-GCC-64/lib/gcc]
+        collapse library dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/TDM-GCC-64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../lib] ==> [C:/TDM-GCC-64/lib]
+        collapse library dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/TDM-GCC-64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../..] ==> [C:/TDM-GCC-64/lib]
+        implicit libs: [mingw32;gcc;pthread;gcc;kernel32;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;pthread;gcc;kernel32;moldname;mingwex;kernel32]
+        implicit objs: [C:/TDM-GCC-64/x86_64-w64-mingw32/lib/crt2.o;C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/crtbegin.o;C:/TDM-GCC-64/x86_64-w64-mingw32/lib/default-manifest.o;C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/crtend.o]
+        implicit dirs: [C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0;C:/TDM-GCC-64/lib/gcc;C:/TDM-GCC-64/x86_64-w64-mingw32/lib;C:/TDM-GCC-64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "C:/TDM-GCC-64/x86_64-w64-mingw32/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.36.1
+...

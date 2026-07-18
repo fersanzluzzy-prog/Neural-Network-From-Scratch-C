@@ -1,0 +1,3 @@
+C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/NeuralNetwork.dir
+C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/edit_cache.dir
+C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/rebuild_cache.dir
