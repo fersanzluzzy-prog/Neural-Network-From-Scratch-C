@@ -11,7 +11,7 @@ void crearMatriz(struct matrix **resultado, int filas, int columnas){
     }
     matriz->fil = filas;
     matriz->col = columnas;
-    matriz->datos = NULL;
+    matriz->datos = malloc(filas*columnas*sizeof(float));
 
     *resultado = matriz;
 
@@ -58,7 +58,7 @@ float *accederPos(struct matrix *matriz, int fila, int columna){
 void modificarPos(struct matrix *matriz, int fila, int columna, float dato){
     if(fila<0 || fila>=matriz->fil || columna<0 || columna>=matriz->col){return;}
     float *datoX = accederPos(matriz, fila, columna);
-    *datoX = dato;
+    *datoX = dato; 
 }
 
 void crearConNumero(struct matrix **resultado, int filas, int columnas, float numero){
@@ -72,13 +72,13 @@ void crearConNumero(struct matrix **resultado, int filas, int columnas, float nu
 
 //copia m1 en m2
 void copiarMatriz(struct matrix *m1, struct matrix *m2){
-
+    
     m2->fil = m1->fil;
     m2->col = m1->col;
     m2->datos = malloc(m2->fil * m2->col * sizeof(float));
 
     for(int i=0; i<m2->fil * m2->col; i++){
-        m2->datos[i] = m1->datos[i];
+            m2->datos[i] = m1->datos[i];
     }
 }
 
@@ -92,8 +92,94 @@ void inicializarRandom(struct matrix *matriz, float min, float max){
     }
 }
 
+//devuelve -1 si las dimensiones no son correctas
+int transponerMatriz(struct matrix *m1, struct matrix *resultado){
+    //comprobacion de que las dimensiones son correctas
+    if(resultado->col == m1->fil && resultado->fil == m1->col){
 
+        resultado->col = m1->fil;
+        resultado->fil = m1->col;
+        for(int i=0; i<m1->fil; i++) {
+            for(int j=0; j<m1->col; j++) {
+                modificarPos(resultado, i, j, *accederPos(m1, j, i));
+            }        
+        }
+        return 1;
+    }
+    else{return -1;}
+}
 
+//devuelve -1 si las dimensiones son incorrectas
+int multiplicarEscalar(struct matrix *m1, float x, struct matrix *resultado){
+    //comprobacion de que las dimensiones son correctas
+    if(resultado->col == m1->fil && resultado->fil == m1->col){
+
+        resultado->col = m1->fil;
+        resultado->fil = m1->col;
+        for(int i=0; i < resultado->col * resultado->fil; i++){
+            resultado->datos[i] = m1->datos[i] * x;
+        }
+        return 1;
+    }
+    else{return -1;}
+    
+}
+
+//Devuelve -1 si las matrices no tienen las mismas dimensiones
+int suma(struct matrix m1, struct matrix m2, struct matrix *resultado){
+
+    if(m1.fil == m2.fil && m1.col == m2.col){
+        resultado->col = m1.col;
+        resultado->fil = m1.fil;
+        for (int i=0; i < resultado->col * resultado->fil; i++){
+            resultado->datos[i] = m1.datos[i] + m2.datos[i];
+        }
+        return 1;
+    }
+    else {
+        printf("Las matrices deben tener las mismas dimensiones.");
+        return -1;
+    }
+}
+
+//m1 - m2. Devuelve -1 si las matrices no tienen las mismas dimensiones
+int resta(struct matrix m1, struct matrix m2, struct matrix *resultado){
+
+    if(m1.fil == m2.fil && m1.col == m2.col){
+        resultado->col = m1.col;
+        resultado->fil = m1.fil;
+        for (int i=0; i < resultado->col * resultado->fil; i++){
+            resultado->datos[i] = m1.datos[i] - m2.datos[i];
+        }
+        return 1;
+    }
+    else {
+        printf("Las matrices deben tener las mismas dimensiones.");
+        return -1;
+    }
+}
+
+//m1 x m2. Devuelve -1 si las matrices no tienen las dimensiones adecuadas
+int multiplicacionMatricial(struct matrix *m1, struct matrix *m2, struct matrix *resultado){
+    if(m1->col == m2->fil){
+        resultado->col = m2->col;
+        resultado->fil = m1->fil;
+        for (int i=0; i < resultado->fil; i++){
+            for(int j=0; j< resultado->col; j++){
+                float x = 0;
+                for(int k=0; k<m1->col; k++){
+                    x += *accederPos(m1, i, k) * *accederPos(m2, k, j); 
+                } 
+                modificarPos(resultado, i, j, x);
+            }
+        }
+        return 1;
+    }
+    else {
+        printf("Las matrices deben tener las mismas dimensiones.");
+        return -1;
+    }
+}
 
 
 

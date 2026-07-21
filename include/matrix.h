@@ -27,4 +27,14 @@ float numeroRandom(float min, float max);
 
 void inicializarRandom(struct matrix *matriz, float min, float max);
 
+int transponerMatriz(struct matrix *m1, struct matrix *resultado);
+
+int multiplicarEscalar(struct matrix *m1, float x, struct matrix *resultado);
+
+int suma(struct matrix m1, struct matrix m2, struct matrix *resultado);
+
+int resta(struct matrix m1, struct matrix m2, struct matrix *resultado);
+
+int multiplicacionMatricial(struct matrix *m1, struct matrix *m2, struct matrix *resultado);
+
 #endif
