@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/main.c" "CMakeFiles/NeuralNetwork.dir/src/main.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/main.c.obj.d"
+  "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/matrix.c" "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

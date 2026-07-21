@@ -84,12 +84,12 @@ clean: CMakeFiles/NeuralNetwork.dir/clean
 CMakeFiles/NeuralNetwork.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=1,2 "Built target NeuralNetwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=1,2,3 "Built target NeuralNetwork"
 .PHONY : CMakeFiles/NeuralNetwork.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NeuralNetwork.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NeuralNetwork.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : CMakeFiles/NeuralNetwork.dir/rule
@@ -101,7 +101,7 @@ NeuralNetwork: CMakeFiles/NeuralNetwork.dir/rule
 # codegen rule for target.
 CMakeFiles/NeuralNetwork.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=1,2 "Finished codegen for target NeuralNetwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target NeuralNetwork"
 .PHONY : CMakeFiles/NeuralNetwork.dir/codegen
 
 # clean rule for target.
