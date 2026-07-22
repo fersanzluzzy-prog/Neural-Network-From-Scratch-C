@@ -71,26 +71,11 @@ include CMakeFiles/NeuralNetwork.dir/flags.make
 CMakeFiles/NeuralNetwork.dir/codegen:
 .PHONY : CMakeFiles/NeuralNetwork.dir/codegen
 
-CMakeFiles/NeuralNetwork.dir/src/main.c.obj: CMakeFiles/NeuralNetwork.dir/flags.make
-CMakeFiles/NeuralNetwork.dir/src/main.c.obj: CMakeFiles/NeuralNetwork.dir/includes_C.rsp
-CMakeFiles/NeuralNetwork.dir/src/main.c.obj: C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/main.c
-CMakeFiles/NeuralNetwork.dir/src/main.c.obj: CMakeFiles/NeuralNetwork.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/NeuralNetwork.dir/src/main.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NeuralNetwork.dir/src/main.c.obj -MF CMakeFiles\NeuralNetwork.dir\src\main.c.obj.d -o CMakeFiles\NeuralNetwork.dir\src\main.c.obj -c C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\src\main.c
-
-CMakeFiles/NeuralNetwork.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NeuralNetwork.dir/src/main.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\src\main.c > CMakeFiles\NeuralNetwork.dir\src\main.c.i
-
-CMakeFiles/NeuralNetwork.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NeuralNetwork.dir/src/main.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\src\main.c -o CMakeFiles\NeuralNetwork.dir\src\main.c.s
-
 CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj: CMakeFiles/NeuralNetwork.dir/flags.make
 CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj: CMakeFiles/NeuralNetwork.dir/includes_C.rsp
 CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj: C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/matrix.c
 CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj: CMakeFiles/NeuralNetwork.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj"
 	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj -MF CMakeFiles\NeuralNetwork.dir\src\matrix.c.obj.d -o CMakeFiles\NeuralNetwork.dir\src\matrix.c.obj -c C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\src\matrix.c
 
 CMakeFiles/NeuralNetwork.dir/src/matrix.c.i: cmake_force
@@ -101,25 +86,39 @@ CMakeFiles/NeuralNetwork.dir/src/matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NeuralNetwork.dir/src/matrix.c.s"
 	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\src\matrix.c -o CMakeFiles\NeuralNetwork.dir\src\matrix.c.s
 
+CMakeFiles/NeuralNetwork.dir/src/layer.c.obj: CMakeFiles/NeuralNetwork.dir/flags.make
+CMakeFiles/NeuralNetwork.dir/src/layer.c.obj: CMakeFiles/NeuralNetwork.dir/includes_C.rsp
+CMakeFiles/NeuralNetwork.dir/src/layer.c.obj: C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/layer.c
+CMakeFiles/NeuralNetwork.dir/src/layer.c.obj: CMakeFiles/NeuralNetwork.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/NeuralNetwork.dir/src/layer.c.obj"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NeuralNetwork.dir/src/layer.c.obj -MF CMakeFiles\NeuralNetwork.dir\src\layer.c.obj.d -o CMakeFiles\NeuralNetwork.dir\src\layer.c.obj -c C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\src\layer.c
+
+CMakeFiles/NeuralNetwork.dir/src/layer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NeuralNetwork.dir/src/layer.c.i"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\src\layer.c > CMakeFiles\NeuralNetwork.dir\src\layer.c.i
+
+CMakeFiles/NeuralNetwork.dir/src/layer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NeuralNetwork.dir/src/layer.c.s"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\src\layer.c -o CMakeFiles\NeuralNetwork.dir\src\layer.c.s
+
 # Object files for target NeuralNetwork
 NeuralNetwork_OBJECTS = \
-"CMakeFiles/NeuralNetwork.dir/src/main.c.obj" \
-"CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj"
+"CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj" \
+"CMakeFiles/NeuralNetwork.dir/src/layer.c.obj"
 
 # External object files for target NeuralNetwork
 NeuralNetwork_EXTERNAL_OBJECTS =
 
-NeuralNetwork.exe: CMakeFiles/NeuralNetwork.dir/src/main.c.obj
-NeuralNetwork.exe: CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj
-NeuralNetwork.exe: CMakeFiles/NeuralNetwork.dir/build.make
-NeuralNetwork.exe: CMakeFiles/NeuralNetwork.dir/linkLibs.rsp
-NeuralNetwork.exe: CMakeFiles/NeuralNetwork.dir/objects1.rsp
-NeuralNetwork.exe: CMakeFiles/NeuralNetwork.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable NeuralNetwork.exe"
+libNeuralNetwork.a: CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj
+libNeuralNetwork.a: CMakeFiles/NeuralNetwork.dir/src/layer.c.obj
+libNeuralNetwork.a: CMakeFiles/NeuralNetwork.dir/build.make
+libNeuralNetwork.a: CMakeFiles/NeuralNetwork.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libNeuralNetwork.a"
+	$(CMAKE_COMMAND) -P CMakeFiles\NeuralNetwork.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\NeuralNetwork.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/NeuralNetwork.dir/build: NeuralNetwork.exe
+CMakeFiles/NeuralNetwork.dir/build: libNeuralNetwork.a
 .PHONY : CMakeFiles/NeuralNetwork.dir/build
 
 CMakeFiles/NeuralNetwork.dir/clean:

@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/NeuralNetwork.dir/src/main.c.obj"
-  "CMakeFiles/NeuralNetwork.dir/src/main.c.obj.d"
+  "CMakeFiles/NeuralNetwork.dir/src/layer.c.obj"
+  "CMakeFiles/NeuralNetwork.dir/src/layer.c.obj.d"
   "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj"
   "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj.d"
-  "NeuralNetwork.exe"
-  "NeuralNetwork.exe.manifest"
-  "NeuralNetwork.pdb"
-  "libNeuralNetwork.dll.a"
+  "libNeuralNetwork.a"
+  "libNeuralNetwork.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

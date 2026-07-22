@@ -128,29 +128,68 @@ NeuralNetwork/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/build
 .PHONY : NeuralNetwork/fast
 
-src/main.obj: src/main.c.obj
-.PHONY : src/main.obj
+#=============================================================================
+# Target rules for targets named test_matrix
+
+# Build rule for target.
+test_matrix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_matrix
+.PHONY : test_matrix
+
+# fast build rule for target.
+test_matrix/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix.dir\build.make CMakeFiles/test_matrix.dir/build
+.PHONY : test_matrix/fast
+
+#=============================================================================
+# Target rules for targets named test_layer
+
+# Build rule for target.
+test_layer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_layer
+.PHONY : test_layer
+
+# fast build rule for target.
+test_layer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/build
+.PHONY : test_layer/fast
+
+#=============================================================================
+# Target rules for targets named test_matrix_mult
+
+# Build rule for target.
+test_matrix_mult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_matrix_mult
+.PHONY : test_matrix_mult
+
+# fast build rule for target.
+test_matrix_mult/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/build
+.PHONY : test_matrix_mult/fast
+
+src/layer.obj: src/layer.c.obj
+.PHONY : src/layer.obj
 
 # target to build an object file
-src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/main.c.obj
-.PHONY : src/main.c.obj
+src/layer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/layer.c.obj
+.PHONY : src/layer.c.obj
 
-src/main.i: src/main.c.i
-.PHONY : src/main.i
+src/layer.i: src/layer.c.i
+.PHONY : src/layer.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/main.c.i
-.PHONY : src/main.c.i
+src/layer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/layer.c.i
+.PHONY : src/layer.c.i
 
-src/main.s: src/main.c.s
-.PHONY : src/main.s
+src/layer.s: src/layer.c.s
+.PHONY : src/layer.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/main.c.s
-.PHONY : src/main.c.s
+src/layer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/layer.c.s
+.PHONY : src/layer.c.s
 
 src/matrix.obj: src/matrix.c.obj
 .PHONY : src/matrix.obj
@@ -176,6 +215,78 @@ src/matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/matrix.c.s
 .PHONY : src/matrix.c.s
 
+tests/test_layer.obj: tests/test_layer.c.obj
+.PHONY : tests/test_layer.obj
+
+# target to build an object file
+tests/test_layer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/tests/test_layer.c.obj
+.PHONY : tests/test_layer.c.obj
+
+tests/test_layer.i: tests/test_layer.c.i
+.PHONY : tests/test_layer.i
+
+# target to preprocess a source file
+tests/test_layer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/tests/test_layer.c.i
+.PHONY : tests/test_layer.c.i
+
+tests/test_layer.s: tests/test_layer.c.s
+.PHONY : tests/test_layer.s
+
+# target to generate assembly for a file
+tests/test_layer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/tests/test_layer.c.s
+.PHONY : tests/test_layer.c.s
+
+tests/test_matrix.obj: tests/test_matrix.c.obj
+.PHONY : tests/test_matrix.obj
+
+# target to build an object file
+tests/test_matrix.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix.dir\build.make CMakeFiles/test_matrix.dir/tests/test_matrix.c.obj
+.PHONY : tests/test_matrix.c.obj
+
+tests/test_matrix.i: tests/test_matrix.c.i
+.PHONY : tests/test_matrix.i
+
+# target to preprocess a source file
+tests/test_matrix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix.dir\build.make CMakeFiles/test_matrix.dir/tests/test_matrix.c.i
+.PHONY : tests/test_matrix.c.i
+
+tests/test_matrix.s: tests/test_matrix.c.s
+.PHONY : tests/test_matrix.s
+
+# target to generate assembly for a file
+tests/test_matrix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix.dir\build.make CMakeFiles/test_matrix.dir/tests/test_matrix.c.s
+.PHONY : tests/test_matrix.c.s
+
+tests/test_matrix_mult.obj: tests/test_matrix_mult.c.obj
+.PHONY : tests/test_matrix_mult.obj
+
+# target to build an object file
+tests/test_matrix_mult.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.obj
+.PHONY : tests/test_matrix_mult.c.obj
+
+tests/test_matrix_mult.i: tests/test_matrix_mult.c.i
+.PHONY : tests/test_matrix_mult.i
+
+# target to preprocess a source file
+tests/test_matrix_mult.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.i
+.PHONY : tests/test_matrix_mult.c.i
+
+tests/test_matrix_mult.s: tests/test_matrix_mult.c.s
+.PHONY : tests/test_matrix_mult.s
+
+# target to generate assembly for a file
+tests/test_matrix_mult.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.s
+.PHONY : tests/test_matrix_mult.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +296,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... NeuralNetwork
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... test_layer
+	@echo ... test_matrix
+	@echo ... test_matrix_mult
+	@echo ... src/layer.obj
+	@echo ... src/layer.i
+	@echo ... src/layer.s
 	@echo ... src/matrix.obj
 	@echo ... src/matrix.i
 	@echo ... src/matrix.s
+	@echo ... tests/test_layer.obj
+	@echo ... tests/test_layer.i
+	@echo ... tests/test_layer.s
+	@echo ... tests/test_matrix.obj
+	@echo ... tests/test_matrix.i
+	@echo ... tests/test_matrix.s
+	@echo ... tests/test_matrix_mult.obj
+	@echo ... tests/test_matrix_mult.i
+	@echo ... tests/test_matrix_mult.s
 .PHONY : help
 
 
