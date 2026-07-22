@@ -167,6 +167,43 @@ test_matrix_mult/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/build
 .PHONY : test_matrix_mult/fast
 
+#=============================================================================
+# Target rules for targets named test_activation
+
+# Build rule for target.
+test_activation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_activation
+.PHONY : test_activation
+
+# fast build rule for target.
+test_activation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/build
+.PHONY : test_activation/fast
+
+src/activation.obj: src/activation.c.obj
+.PHONY : src/activation.obj
+
+# target to build an object file
+src/activation.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/activation.c.obj
+.PHONY : src/activation.c.obj
+
+src/activation.i: src/activation.c.i
+.PHONY : src/activation.i
+
+# target to preprocess a source file
+src/activation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/activation.c.i
+.PHONY : src/activation.c.i
+
+src/activation.s: src/activation.c.s
+.PHONY : src/activation.s
+
+# target to generate assembly for a file
+src/activation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/activation.c.s
+.PHONY : src/activation.c.s
+
 src/layer.obj: src/layer.c.obj
 .PHONY : src/layer.obj
 
@@ -214,6 +251,30 @@ src/matrix.s: src/matrix.c.s
 src/matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/matrix.c.s
 .PHONY : src/matrix.c.s
+
+tests/test_activation.obj: tests/test_activation.c.obj
+.PHONY : tests/test_activation.obj
+
+# target to build an object file
+tests/test_activation.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/tests/test_activation.c.obj
+.PHONY : tests/test_activation.c.obj
+
+tests/test_activation.i: tests/test_activation.c.i
+.PHONY : tests/test_activation.i
+
+# target to preprocess a source file
+tests/test_activation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/tests/test_activation.c.i
+.PHONY : tests/test_activation.c.i
+
+tests/test_activation.s: tests/test_activation.c.s
+.PHONY : tests/test_activation.s
+
+# target to generate assembly for a file
+tests/test_activation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/tests/test_activation.c.s
+.PHONY : tests/test_activation.c.s
 
 tests/test_layer.obj: tests/test_layer.c.obj
 .PHONY : tests/test_layer.obj
@@ -296,15 +357,22 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... NeuralNetwork
+	@echo ... test_activation
 	@echo ... test_layer
 	@echo ... test_matrix
 	@echo ... test_matrix_mult
+	@echo ... src/activation.obj
+	@echo ... src/activation.i
+	@echo ... src/activation.s
 	@echo ... src/layer.obj
 	@echo ... src/layer.i
 	@echo ... src/layer.s
 	@echo ... src/matrix.obj
 	@echo ... src/matrix.i
 	@echo ... src/matrix.s
+	@echo ... tests/test_activation.obj
+	@echo ... tests/test_activation.i
+	@echo ... tests/test_activation.s
 	@echo ... tests/test_layer.obj
 	@echo ... tests/test_layer.i
 	@echo ... tests/test_layer.s

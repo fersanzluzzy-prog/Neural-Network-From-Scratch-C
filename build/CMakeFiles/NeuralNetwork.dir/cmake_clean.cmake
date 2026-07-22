@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/NeuralNetwork.dir/src/activation.c.obj"
+  "CMakeFiles/NeuralNetwork.dir/src/activation.c.obj.d"
   "CMakeFiles/NeuralNetwork.dir/src/layer.c.obj"
   "CMakeFiles/NeuralNetwork.dir/src/layer.c.obj.d"
   "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj"
