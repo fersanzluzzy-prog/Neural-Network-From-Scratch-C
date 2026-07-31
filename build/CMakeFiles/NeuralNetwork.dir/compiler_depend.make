@@ -14,6 +14,7 @@ CMakeFiles/NeuralNetwork.dir/src/activation.c.obj: C:/Users/nsanz/Desktop/proyec
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/crtdefs.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/limits.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/malloc.h \
+  C:/TDM-GCC-64/x86_64-w64-mingw32/include/math.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
@@ -105,6 +106,8 @@ C:/TDM-GCC-64/x86_64-w64-mingw32/include/limits.h:
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/layer.c:
 
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/TDM-GCC-64/x86_64-w64-mingw32/include/math.h:
 
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 

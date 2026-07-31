@@ -44,10 +44,38 @@ int main(void)
     printf("\n===== TEST 3: La entrada permanece igual =====\n");
     imprimirMatriz(*entrada);
 
-    eliminarMatriz(&entrada);
-    eliminarMatriz(&salida);
+    
 
     printf("\nTodos los tests finalizados.\n");
+
+    printf("\n===== TEST 4: Sigmoid =====\n");
+
+    float datosSigmoid[] = {
+        -2.0f, -1.0f, 0.0f,
+        1.0f,  2.0f, 3.0f,
+        -3.0f,  4.0f, 5.0f
+    };
+
+    inicializarMatriz(entrada, datosSigmoid);
+
+    printf("\nEntrada:\n");
+    imprimirMatriz(*entrada);
+
+    if(sigmoide(entrada, salida))
+        printf("\nSigmoid ejecutada correctamente.\n");
+    else
+        printf("\nERROR EN SIGMOID\n");
+
+    printf("\nSalida obtenida:\n");
+    imprimirMatriz(*salida);
+
+    printf("\nValores aproximados esperados:\n");
+    printf("0.119203 0.268941 0.500000\n");
+    printf("0.731059 0.880797 0.952574\n");
+    printf("0.047426 0.982014 0.993307\n");
+
+    eliminarMatriz(&entrada);
+    eliminarMatriz(&salida);
 
     return 0;
 }
