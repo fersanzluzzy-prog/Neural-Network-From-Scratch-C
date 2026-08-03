@@ -180,6 +180,19 @@ test_activation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/build
 .PHONY : test_activation/fast
 
+#=============================================================================
+# Target rules for targets named test_network
+
+# Build rule for target.
+test_network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_network
+.PHONY : test_network
+
+# fast build rule for target.
+test_network/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/build
+.PHONY : test_network/fast
+
 src/activation.obj: src/activation.c.obj
 .PHONY : src/activation.obj
 
@@ -251,6 +264,30 @@ src/matrix.s: src/matrix.c.s
 src/matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/matrix.c.s
 .PHONY : src/matrix.c.s
+
+src/network.obj: src/network.c.obj
+.PHONY : src/network.obj
+
+# target to build an object file
+src/network.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/network.c.obj
+.PHONY : src/network.c.obj
+
+src/network.i: src/network.c.i
+.PHONY : src/network.i
+
+# target to preprocess a source file
+src/network.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/network.c.i
+.PHONY : src/network.c.i
+
+src/network.s: src/network.c.s
+.PHONY : src/network.s
+
+# target to generate assembly for a file
+src/network.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/network.c.s
+.PHONY : src/network.c.s
 
 tests/test_activation.obj: tests/test_activation.c.obj
 .PHONY : tests/test_activation.obj
@@ -348,6 +385,30 @@ tests/test_matrix_mult.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.s
 .PHONY : tests/test_matrix_mult.c.s
 
+tests/test_network.obj: tests/test_network.c.obj
+.PHONY : tests/test_network.obj
+
+# target to build an object file
+tests/test_network.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/tests/test_network.c.obj
+.PHONY : tests/test_network.c.obj
+
+tests/test_network.i: tests/test_network.c.i
+.PHONY : tests/test_network.i
+
+# target to preprocess a source file
+tests/test_network.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/tests/test_network.c.i
+.PHONY : tests/test_network.c.i
+
+tests/test_network.s: tests/test_network.c.s
+.PHONY : tests/test_network.s
+
+# target to generate assembly for a file
+tests/test_network.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/tests/test_network.c.s
+.PHONY : tests/test_network.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -361,6 +422,7 @@ help:
 	@echo ... test_layer
 	@echo ... test_matrix
 	@echo ... test_matrix_mult
+	@echo ... test_network
 	@echo ... src/activation.obj
 	@echo ... src/activation.i
 	@echo ... src/activation.s
@@ -370,6 +432,9 @@ help:
 	@echo ... src/matrix.obj
 	@echo ... src/matrix.i
 	@echo ... src/matrix.s
+	@echo ... src/network.obj
+	@echo ... src/network.i
+	@echo ... src/network.s
 	@echo ... tests/test_activation.obj
 	@echo ... tests/test_activation.i
 	@echo ... tests/test_activation.s
@@ -382,6 +447,9 @@ help:
 	@echo ... tests/test_matrix_mult.obj
 	@echo ... tests/test_matrix_mult.i
 	@echo ... tests/test_matrix_mult.s
+	@echo ... tests/test_network.obj
+	@echo ... tests/test_network.i
+	@echo ... tests/test_network.s
 .PHONY : help
 
 

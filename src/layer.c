@@ -4,7 +4,7 @@
 
 //si devuelven int, 1 si va todo bien, -1 si ocurre algun error
 
-int crearLayer(struct matrix *pesos, struct matrix *bias, struct layer **resultado){
+int crearLayer(struct matrix *pesos, struct matrix *bias, activacion activacion, struct layer **resultado){
     *resultado = malloc(sizeof(struct layer));
 
     if(*resultado==NULL){
@@ -17,14 +17,15 @@ int crearLayer(struct matrix *pesos, struct matrix *bias, struct layer **resulta
         (*resultado)->nEntradas = pesos->col;
         (*resultado)->pesos = pesos;
         (*resultado)->bias = bias;
+        (*resultado)->activacion = activacion;
         return 1;
     }
     return -1;
 }
 
 void eliminarLayer(struct layer **layer){
-    free((*layer)->pesos);
-    free((*layer)->bias);
+    eliminarMatriz(&(*layer)->pesos);
+    eliminarMatriz(&(*layer)->bias);
     free(*layer);
     *layer = NULL;
 }
@@ -32,9 +33,23 @@ void eliminarLayer(struct layer **layer){
 int forward(struct matrix *entradas, struct layer *layer, struct matrix *salidas){
     if (entradas->fil == layer->nEntradas && salidas->fil == layer->nSalidas){
         multiplicacionMatricial(layer->pesos, entradas, salidas);
-        struct matrix copia = *salidas; 
-        suma(copia, *layer->bias, salidas);
+        struct matrix *copia = salidas; 
+        suma(*copia, *layer->bias, salidas);
         
+        activacion actv = layer->activacion;
+        if(actv == RELU){
+            *copia = *salidas; 
+            relu(copia, salidas);
+        }
+        else if(actv == SIGMOID){
+            *copia = *salidas; 
+            sigmoide(copia, salidas);
+        }
+        else if(actv == TANH){
+            *copia = *salidas; 
+            taNh(copia, salidas);
+        }
+
         return 1;
     }
     else{return -1;}

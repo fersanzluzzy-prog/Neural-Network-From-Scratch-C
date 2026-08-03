@@ -17,6 +17,7 @@ add_library(NeuralNetwork
     src/matrix.c
     src/layer.c
     src/activation.c
+    src/network.c
 
 )
 
@@ -37,3 +38,6 @@ target_link_libraries(test_matrix_mult NeuralNetwork)
 
 add_executable(test_activation tests/test_activation.c)
 target_link_libraries(test_activation NeuralNetwork)
+
+add_executable(test_network tests/test_network.c)
+target_link_libraries(test_network NeuralNetwork)

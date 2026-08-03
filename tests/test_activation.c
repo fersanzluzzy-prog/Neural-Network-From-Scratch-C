@@ -74,6 +74,36 @@ int main(void)
     printf("0.731059 0.880797 0.952574\n");
     printf("0.047426 0.982014 0.993307\n");
 
+    /*====================================
+    TEST 4: Tanh
+    ====================================*/
+
+    printf("\n===== TEST 4: Tanh =====\n");
+
+    float datosTanh[] = {
+        -2.0f, -1.0f, 0.0f,
+        1.0f,  2.0f, 3.0f,
+        -3.0f,  4.0f, 5.0f
+    };
+
+    inicializarMatriz(entrada, datosTanh);
+
+    printf("\nEntrada:\n");
+    imprimirMatriz(*entrada);
+
+    if(taNh(entrada, salida))
+        printf("\nTanh ejecutada correctamente.\n");
+    else
+        printf("\nERROR EN TANH\n");
+
+    printf("\nSalida obtenida:\n");
+    imprimirMatriz(*salida);
+
+    printf("\nValores aproximados esperados:\n");
+    printf("-0.964028 -0.761594  0.000000\n");
+    printf(" 0.761594  0.964028  0.995055\n");
+    printf("-0.995055  0.999329  0.999909\n");
+
     eliminarMatriz(&entrada);
     eliminarMatriz(&salida);
 

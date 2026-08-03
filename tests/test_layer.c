@@ -10,14 +10,14 @@ int main(void)
     srand(time(NULL));
 
     printf("=====================================\n");
-    printf("        TESTS MODULO LAYER\n");
-    printf("=====================================\n\n");
+    printf("         TESTS MODULO LAYER\n");
+    printf("=====================================\n");
 
     /*====================================
       TEST 1: Crear Layer
     ====================================*/
 
-    printf("===== TEST 1: Crear Layer =====\n");
+    printf("\n===== TEST 1: Crear Layer =====\n");
 
     struct matrix *pesos;
     struct matrix *bias;
@@ -26,13 +26,22 @@ int main(void)
     crearMatriz(&pesos, 2, 3);
     crearMatriz(&bias, 2, 1);
 
-    inicializarRandom(pesos, -1.0f, 1.0f);
-    inicializarRandom(bias, -1.0f, 1.0f);
+    float datosPesos[] = {
+        0.5f, -1.0f, 2.0f,
+        1.0f,  0.0f,-0.5f
+    };
 
-    if (crearLayer(pesos, bias, &L))
+    float datosBias[] = {
+        0.1f,
+       -0.2f
+    };
+
+    inicializarMatriz(pesos, datosPesos);
+    inicializarMatriz(bias, datosBias);
+
+    if(crearLayer(pesos, bias, RELU, &L))
         printf("Layer creada correctamente.\n");
-    else
-    {
+    else{
         printf("ERROR al crear la layer.\n");
         return 1;
     }
@@ -46,63 +55,86 @@ int main(void)
     printf("\nEntradas: %d\n", L->nEntradas);
     printf("Salidas : %d\n", L->nSalidas);
 
+
     /*====================================
-      TEST 2: Forward
+      TEST 3: Forward RELU
     ====================================*/
 
-    printf("\n===== TEST 2: Forward =====\n");
-
-    float datosPesos[] = {
-        1, 2, 3,
-        4, 5, 6
-    };
-
-    float datosBias[] = {
-        10,
-        20
-    };
-
-    inicializarMatriz(L->pesos, datosPesos);
-    inicializarMatriz(L->bias, datosBias);
+    printf("\n===== TEST 3: Forward RELU =====\n");
 
     struct matrix *entrada;
-    crearMatriz(&entrada, 3, 1);
+    struct matrix *salida;
+    struct matrix *prueba;
+
+    crearMatriz(&entrada,3,1);
+    crearMatriz(&salida,2,1);
+    crearMatriz(&prueba, 2, 1);
 
     float datosEntrada[] = {
-        7,
-        8,
-        9
+        1.0f,
+        2.0f,
+       -1.0f
     };
 
-    inicializarMatriz(entrada, datosEntrada);
+    inicializarMatriz(entrada,datosEntrada);
 
-    struct matrix *salida;
-    crearMatriz(&salida, 2, 1);
+    L->activacion = RELU;
 
-    if (forward(entrada, L, salida))
+    if(forward(entrada,L,salida))
         printf("Forward correcto.\n");
     else
         printf("ERROR en forward.\n");
 
-    printf("\nEntrada:\n");
-    imprimirMatriz(*entrada);
-
-    printf("\nSalida obtenida:\n");
+    printf("\nSalida:\n");
     imprimirMatriz(*salida);
 
-    printf("\nResultado esperado:\n");
-    printf("60.000000\n");
-    printf("162.000000\n");
+    printf("\nEsperado:\n");
+    printf("0.000000\n");
+    printf("1.300000\n");
 
     /*====================================
-      TEST 3: Eliminar Layer
+      TEST 4: Forward SIGMOID
     ====================================*/
 
-    printf("\n===== TEST 3: Eliminar Layer =====\n");
+    printf("\n===== TEST 4: Forward SIGMOID =====\n");
+
+    L->activacion = SIGMOID;
+
+    forward(entrada,L,salida);
+
+    printf("\nSalida:\n");
+    imprimirMatriz(*salida);
+
+    printf("\nEsperado (aprox.):\n");
+    printf("0.032295\n");
+    printf("0.785835\n");
+
+    /*====================================
+      TEST 5: Forward TANH
+    ====================================*/
+
+    printf("\n===== TEST 5: Forward TANH =====\n");
+
+    L->activacion = TANH;
+
+    forward(entrada,L,salida);
+
+    printf("\nSalida:\n");
+    imprimirMatriz(*salida);
+
+    printf("\nEsperado (aprox.):\n");
+    printf("-0.997775\n");
+    printf("0.861723\n");
+
+    /*====================================
+      TEST 6: Eliminar Layer
+    ====================================*/
+
+    printf("\n===== TEST 6: Eliminar Layer =====\n");
 
     eliminarLayer(&L);
 
-    printf("Layer = %p\n", (void *)L);
+    printf("Layer = %p\n",(void*)L);
 
     return 0;
 }
