@@ -8,23 +8,18 @@ CMakeFiles/test_network.dir/tests/test_network.c.obj: C:/Users/nsanz/Desktop/pro
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/TDM-GCC-64/x86_64-w64-mingw32/include/_timeval.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/crtdefs.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/limits.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/malloc.h \
-  C:/TDM-GCC-64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdio.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdlib.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/TDM-GCC-64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/TDM-GCC-64/x86_64-w64-mingw32/include/time.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/include/activation.h \
   C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/include/layer.h \
@@ -35,8 +30,6 @@ CMakeFiles/test_network.dir/tests/test_network.c.obj: C:/Users/nsanz/Desktop/pro
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_secapi.h:
-
-C:/TDM-GCC-64/x86_64-w64-mingw32/include/_timeval.h:
 
 C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed/syslimits.h:
 
@@ -70,21 +63,13 @@ C:/TDM-GCC-64/x86_64-w64-mingw32/include/limits.h:
 
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/malloc.h:
 
-C:/TDM-GCC-64/x86_64-w64-mingw32/include/pthread_time.h:
-
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
-
-C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/include/network.h:
 
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/include/activation.h:
 
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/swprintf.inl:
-
-C:/TDM-GCC-64/x86_64-w64-mingw32/include/sys/timeb.h:
-
-C:/TDM-GCC-64/x86_64-w64-mingw32/include/time.h:
 
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h:
 

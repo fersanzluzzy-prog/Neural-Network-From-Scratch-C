@@ -107,20 +107,14 @@ Implemented features:
 
 ---
 
-## Current Status
+## Roadmap
 
-### ✅ Completed
-
-- Matrix module
-- Layer module
-- Activation module
-- Network module
-- Unit tests for every module
-
-### 🚧 Next Milestones
-
-- Complete network forward propagation
-- Loss functions
-- Backpropagation
-- Optimizers
-- Training loop
+- [x] Matrix library
+- [x] Dense layer
+- [x] Activation functions
+- [x] Network structure
+- [ ] Network forward propagation
+- [ ] Loss functions
+- [ ] Backpropagation
+- [ ] Gradient descent
+- [ ] Performance optimizations

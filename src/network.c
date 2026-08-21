@@ -46,4 +46,22 @@ void eliminarRed(struct network **red){
     *red = NULL;
 }
 
+struct matrix *forwardRed(struct network *red, struct matrix *entrada){
+    struct matrix *copia;
+    crearMatriz(&copia, 0, 0);
+    copiarMatriz(entrada, copia);
+    if(red->numeroCapas > 0 && red->capas[0]->nEntradas == entrada->fil && entrada->col == 1){
+        for(int i=0; i<red->numeroCapas; i++){
+            struct matrix *resultado = malloc(sizeof(struct matrix));
+            crearMatriz(&resultado, red->capas[i]->nSalidas, 1); //en un futuro implementar batches (mas columnas) 
+            forward(copia, red->capas[i], resultado);
+            copiarMatriz(resultado, copia);
+            eliminarMatriz(&resultado);
+        }
+        return copia;
+    }
+    return NULL;    
+
+}
+
 
