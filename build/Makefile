@@ -193,6 +193,19 @@ test_network/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/build
 .PHONY : test_network/fast
 
+#=============================================================================
+# Target rules for targets named test_loss
+
+# Build rule for target.
+test_loss: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_loss
+.PHONY : test_loss
+
+# fast build rule for target.
+test_loss/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/build
+.PHONY : test_loss/fast
+
 src/activation.obj: src/activation.c.obj
 .PHONY : src/activation.obj
 
@@ -240,6 +253,30 @@ src/layer.s: src/layer.c.s
 src/layer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/layer.c.s
 .PHONY : src/layer.c.s
+
+src/loss.obj: src/loss.c.obj
+.PHONY : src/loss.obj
+
+# target to build an object file
+src/loss.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/loss.c.obj
+.PHONY : src/loss.c.obj
+
+src/loss.i: src/loss.c.i
+.PHONY : src/loss.i
+
+# target to preprocess a source file
+src/loss.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/loss.c.i
+.PHONY : src/loss.c.i
+
+src/loss.s: src/loss.c.s
+.PHONY : src/loss.s
+
+# target to generate assembly for a file
+src/loss.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/loss.c.s
+.PHONY : src/loss.c.s
 
 src/matrix.obj: src/matrix.c.obj
 .PHONY : src/matrix.obj
@@ -337,6 +374,30 @@ tests/test_layer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/tests/test_layer.c.s
 .PHONY : tests/test_layer.c.s
 
+tests/test_loss.obj: tests/test_loss.c.obj
+.PHONY : tests/test_loss.obj
+
+# target to build an object file
+tests/test_loss.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.obj
+.PHONY : tests/test_loss.c.obj
+
+tests/test_loss.i: tests/test_loss.c.i
+.PHONY : tests/test_loss.i
+
+# target to preprocess a source file
+tests/test_loss.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.i
+.PHONY : tests/test_loss.c.i
+
+tests/test_loss.s: tests/test_loss.c.s
+.PHONY : tests/test_loss.s
+
+# target to generate assembly for a file
+tests/test_loss.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.s
+.PHONY : tests/test_loss.c.s
+
 tests/test_matrix.obj: tests/test_matrix.c.obj
 .PHONY : tests/test_matrix.obj
 
@@ -420,6 +481,7 @@ help:
 	@echo ... NeuralNetwork
 	@echo ... test_activation
 	@echo ... test_layer
+	@echo ... test_loss
 	@echo ... test_matrix
 	@echo ... test_matrix_mult
 	@echo ... test_network
@@ -429,6 +491,9 @@ help:
 	@echo ... src/layer.obj
 	@echo ... src/layer.i
 	@echo ... src/layer.s
+	@echo ... src/loss.obj
+	@echo ... src/loss.i
+	@echo ... src/loss.s
 	@echo ... src/matrix.obj
 	@echo ... src/matrix.i
 	@echo ... src/matrix.s
@@ -441,6 +506,9 @@ help:
 	@echo ... tests/test_layer.obj
 	@echo ... tests/test_layer.i
 	@echo ... tests/test_layer.s
+	@echo ... tests/test_loss.obj
+	@echo ... tests/test_loss.i
+	@echo ... tests/test_loss.s
 	@echo ... tests/test_matrix.obj
 	@echo ... tests/test_matrix.i
 	@echo ... tests/test_matrix.s

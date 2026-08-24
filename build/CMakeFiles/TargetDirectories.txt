@@ -4,5 +4,6 @@ C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/test_matrix_mult.dir
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/test_activation.dir
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/test_network.dir
+C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/test_loss.dir
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/edit_cache.dir
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/rebuild_cache.dir

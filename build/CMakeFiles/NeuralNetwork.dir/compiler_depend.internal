@@ -51,6 +51,18 @@ CMakeFiles/NeuralNetwork.dir/src/layer.c.obj
  C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/include/layer.h
  C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/include/matrix.h
 
+CMakeFiles/NeuralNetwork.dir/src/loss.c.obj
+ C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/loss.c
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw.h
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_mac.h
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_secapi.h
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt.h
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/crtdefs.h
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/math.h
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h
+ C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/include/matrix.h
+
 CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj
  C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/matrix.c
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed/limits.h

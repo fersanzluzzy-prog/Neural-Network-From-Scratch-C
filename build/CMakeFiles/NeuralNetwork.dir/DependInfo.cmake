@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/activation.c" "CMakeFiles/NeuralNetwork.dir/src/activation.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/activation.c.obj.d"
   "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/layer.c" "CMakeFiles/NeuralNetwork.dir/src/layer.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/layer.c.obj.d"
+  "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/loss.c" "CMakeFiles/NeuralNetwork.dir/src/loss.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/loss.c.obj.d"
   "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/matrix.c" "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj.d"
   "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/network.c" "CMakeFiles/NeuralNetwork.dir/src/network.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/network.c.obj.d"
   )

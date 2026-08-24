@@ -68,6 +68,7 @@ all: CMakeFiles/test_layer.dir/all
 all: CMakeFiles/test_matrix_mult.dir/all
 all: CMakeFiles/test_activation.dir/all
 all: CMakeFiles/test_network.dir/all
+all: CMakeFiles/test_loss.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -77,6 +78,7 @@ codegen: CMakeFiles/test_layer.dir/codegen
 codegen: CMakeFiles/test_matrix_mult.dir/codegen
 codegen: CMakeFiles/test_activation.dir/codegen
 codegen: CMakeFiles/test_network.dir/codegen
+codegen: CMakeFiles/test_loss.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -90,6 +92,7 @@ clean: CMakeFiles/test_layer.dir/clean
 clean: CMakeFiles/test_matrix_mult.dir/clean
 clean: CMakeFiles/test_activation.dir/clean
 clean: CMakeFiles/test_network.dir/clean
+clean: CMakeFiles/test_loss.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -99,12 +102,12 @@ clean: CMakeFiles/test_network.dir/clean
 CMakeFiles/NeuralNetwork.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target NeuralNetwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target NeuralNetwork"
 .PHONY : CMakeFiles/NeuralNetwork.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NeuralNetwork.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/NeuralNetwork.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : CMakeFiles/NeuralNetwork.dir/rule
@@ -116,7 +119,7 @@ NeuralNetwork: CMakeFiles/NeuralNetwork.dir/rule
 # codegen rule for target.
 CMakeFiles/NeuralNetwork.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target NeuralNetwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target NeuralNetwork"
 .PHONY : CMakeFiles/NeuralNetwork.dir/codegen
 
 # clean rule for target.
@@ -131,12 +134,12 @@ CMakeFiles/NeuralNetwork.dir/clean:
 CMakeFiles/test_matrix.dir/all: CMakeFiles/NeuralNetwork.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix.dir\build.make CMakeFiles/test_matrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix.dir\build.make CMakeFiles/test_matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=10,11 "Built target test_matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=13,14 "Built target test_matrix"
 .PHONY : CMakeFiles/test_matrix.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_matrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_matrix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_matrix.dir/rule
@@ -148,7 +151,7 @@ test_matrix: CMakeFiles/test_matrix.dir/rule
 # codegen rule for target.
 CMakeFiles/test_matrix.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix.dir\build.make CMakeFiles/test_matrix.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=10,11 "Finished codegen for target test_matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=13,14 "Finished codegen for target test_matrix"
 .PHONY : CMakeFiles/test_matrix.dir/codegen
 
 # clean rule for target.
@@ -163,12 +166,12 @@ CMakeFiles/test_matrix.dir/clean:
 CMakeFiles/test_layer.dir/all: CMakeFiles/NeuralNetwork.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=8,9 "Built target test_layer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=9,10 "Built target test_layer"
 .PHONY : CMakeFiles/test_layer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_layer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_layer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_layer.dir/rule
@@ -180,7 +183,7 @@ test_layer: CMakeFiles/test_layer.dir/rule
 # codegen rule for target.
 CMakeFiles/test_layer.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=8,9 "Finished codegen for target test_layer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=9,10 "Finished codegen for target test_layer"
 .PHONY : CMakeFiles/test_layer.dir/codegen
 
 # clean rule for target.
@@ -195,12 +198,12 @@ CMakeFiles/test_layer.dir/clean:
 CMakeFiles/test_matrix_mult.dir/all: CMakeFiles/NeuralNetwork.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=12,13 "Built target test_matrix_mult"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=15,16 "Built target test_matrix_mult"
 .PHONY : CMakeFiles/test_matrix_mult.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_matrix_mult.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_matrix_mult.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_matrix_mult.dir/rule
@@ -212,7 +215,7 @@ test_matrix_mult: CMakeFiles/test_matrix_mult.dir/rule
 # codegen rule for target.
 CMakeFiles/test_matrix_mult.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=12,13 "Finished codegen for target test_matrix_mult"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=15,16 "Finished codegen for target test_matrix_mult"
 .PHONY : CMakeFiles/test_matrix_mult.dir/codegen
 
 # clean rule for target.
@@ -227,12 +230,12 @@ CMakeFiles/test_matrix_mult.dir/clean:
 CMakeFiles/test_activation.dir/all: CMakeFiles/NeuralNetwork.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=6,7 "Built target test_activation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=7,8 "Built target test_activation"
 .PHONY : CMakeFiles/test_activation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_activation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_activation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_activation.dir/rule
@@ -244,7 +247,7 @@ test_activation: CMakeFiles/test_activation.dir/rule
 # codegen rule for target.
 CMakeFiles/test_activation.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=6,7 "Finished codegen for target test_activation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=7,8 "Finished codegen for target test_activation"
 .PHONY : CMakeFiles/test_activation.dir/codegen
 
 # clean rule for target.
@@ -259,12 +262,12 @@ CMakeFiles/test_activation.dir/clean:
 CMakeFiles/test_network.dir/all: CMakeFiles/NeuralNetwork.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=14,15 "Built target test_network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=17,18 "Built target test_network"
 .PHONY : CMakeFiles/test_network.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_network.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_network.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_network.dir/rule
@@ -276,13 +279,45 @@ test_network: CMakeFiles/test_network.dir/rule
 # codegen rule for target.
 CMakeFiles/test_network.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=14,15 "Finished codegen for target test_network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=17,18 "Finished codegen for target test_network"
 .PHONY : CMakeFiles/test_network.dir/codegen
 
 # clean rule for target.
 CMakeFiles/test_network.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/clean
 .PHONY : CMakeFiles/test_network.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_loss.dir
+
+# All Build rule for target.
+CMakeFiles/test_loss.dir/all: CMakeFiles/NeuralNetwork.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=11,12 "Built target test_loss"
+.PHONY : CMakeFiles/test_loss.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_loss.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_loss.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
+.PHONY : CMakeFiles/test_loss.dir/rule
+
+# Convenience name for target.
+test_loss: CMakeFiles/test_loss.dir/rule
+.PHONY : test_loss
+
+# codegen rule for target.
+CMakeFiles/test_loss.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=11,12 "Finished codegen for target test_loss"
+.PHONY : CMakeFiles/test_loss.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_loss.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/clean
+.PHONY : CMakeFiles/test_loss.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
