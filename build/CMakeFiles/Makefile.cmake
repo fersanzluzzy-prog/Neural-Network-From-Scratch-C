@@ -32,10 +32,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake"
-  "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/CMakeLists.txt"
-  "CMakeFiles/4.4.0/CMakeCCompiler.cmake"
-  "CMakeFiles/4.4.0/CMakeRCCompiler.cmake"
-  "CMakeFiles/4.4.0/CMakeSystem.cmake"
+  "C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/CMakeLists.txt"
+  "CMakeFiles/4.4.2/CMakeCCompiler.cmake"
+  "CMakeFiles/4.4.2/CMakeRCCompiler.cmake"
+  "CMakeFiles/4.4.2/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:
@@ -58,4 +58,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_activation.dir/DependInfo.cmake"
   "CMakeFiles/test_network.dir/DependInfo.cmake"
   "CMakeFiles/test_loss.dir/DependInfo.cmake"
+  "CMakeFiles/test_cache.dir/DependInfo.cmake"
   )

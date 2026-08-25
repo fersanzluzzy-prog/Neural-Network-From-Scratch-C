@@ -177,5 +177,53 @@ int main(void)
     printf("       TODOS LOS TESTS FINALIZADOS\n");
     printf("=====================================\n");
 
+    /*====================================
+      TEST 5: Derivada MSE
+    ====================================*/
+
+    printf("\n===== TEST 5: Derivada MSE =====\n");
+
+    struct matrix *reales5;
+    struct matrix *esperadas5;
+    struct matrix *derivada;
+
+    crearMatriz(&reales5, 3, 1);
+    crearMatriz(&esperadas5, 3, 1);
+
+    float datosReales5[] = {
+        0.2f,
+        0.7f,
+        0.1f
+    };
+
+    float datosEsperadas5[] = {
+        0.0f,
+        1.0f,
+        0.0f
+    };
+
+    inicializarMatriz(reales5, datosReales5);
+    inicializarMatriz(esperadas5, datosEsperadas5);
+
+    derivada = mseDerivada(*reales5, *esperadas5);
+
+    printf("\nReales:\n");
+    imprimirMatriz(*reales5);
+
+    printf("\nEsperadas:\n");
+    imprimirMatriz(*esperadas5);
+
+    printf("\nDerivada obtenida:\n");
+    imprimirMatriz(*derivada);
+
+    printf("\nValores esperados:\n");
+    printf("0.133333\n");
+    printf("-0.200000\n");
+    printf("0.066667\n");
+
+    eliminarMatriz(&reales5);
+    eliminarMatriz(&esperadas5);
+    eliminarMatriz(&derivada);
+
     return 0;
 }

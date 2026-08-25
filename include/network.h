@@ -6,6 +6,7 @@
 
 struct network{
     struct layer **capas;
+    struct cache **cache;
     int numeroCapas;
 };
 

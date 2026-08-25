@@ -19,13 +19,26 @@ struct layer{
 
 };
 
+struct cache{
+    struct matrix *a;
+    struct matrix *z;
+};
+
 int crearLayer(struct matrix *pesos, struct matrix *bias, activacion activacion, struct layer **resultado);
 
 void eliminarLayer(struct layer **layer);
 
-int forward(struct matrix *entradas, struct layer *layer, struct matrix *salidas);
+struct cache *forward(struct matrix *entradas, struct layer *layer, struct matrix *salidas);
 
+struct cache *guardarCacheLayer(struct matrix a1, struct matrix z1);
 
+struct cache *inicializarCache();
+
+void guardarCacheLayerA(struct cache *cache, struct matrix a1);
+
+void guardarCacheLayerZ(struct cache *cache, struct matrix z1);
+
+int eliminarCacheLayer(struct cache **c);
 
 
 #endif

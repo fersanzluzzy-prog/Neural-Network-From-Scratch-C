@@ -3,5 +3,6 @@
 
 float mse(struct matrix reales, struct matrix esperadas);
 
+struct matrix *mseDerivada(struct matrix reales, struct matrix esperadas);
 
 #endif

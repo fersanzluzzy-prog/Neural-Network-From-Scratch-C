@@ -30,11 +30,15 @@ void eliminarLayer(struct layer **layer){
     *layer = NULL;
 }
 
-int forward(struct matrix *entradas, struct layer *layer, struct matrix *salidas){
+//retorna un puntero a una struct cache con a y con z, NULL si algo sale mal
+struct cache *forward(struct matrix *entradas, struct layer *layer, struct matrix *salidas){
     if (entradas->fil == layer->nEntradas && salidas->fil == layer->nSalidas){
-        multiplicacionMatricial(layer->pesos, entradas, salidas);
         struct matrix *copia = salidas; 
+        struct cache *c = inicializarCache();
+
+        multiplicacionMatricial(layer->pesos, entradas, salidas);
         suma(*copia, *layer->bias, salidas);
+        guardarCacheLayerZ(c, *salidas);
         
         activacion actv = layer->activacion;
         if(actv == RELU){
@@ -50,9 +54,42 @@ int forward(struct matrix *entradas, struct layer *layer, struct matrix *salidas
             taNh(copia, salidas);
         }
 
-        return 1;
+        guardarCacheLayerA(c, *salidas);
+
+        return c;
     }
-    else{return -1;}
+    else{return NULL;}
+}
+
+struct cache *inicializarCache(){
+    struct cache *cache = malloc(sizeof(struct cache));
+    cache->a = NULL;
+    cache->z = NULL;
+    return cache;
+}
+
+void guardarCacheLayerA(struct cache *cache, struct matrix a1){
+    cache->a = malloc(sizeof(struct matrix));
+    struct matrix *m;
+    crearMatriz(&m, a1.fil, a1.col);
+    copiarMatriz(&a1, m);
+    cache->a = m;
+}
+
+void guardarCacheLayerZ(struct cache *cache, struct matrix z1){
+    cache->z = malloc(sizeof(struct matrix));
+    struct matrix *m;
+    crearMatriz(&m, z1.fil, z1.col);
+    copiarMatriz(&z1, m);
+    cache->z = m;
+}
+
+int eliminarCacheLayer(struct cache **c){
+    free((*c)->a);
+    free((*c)->z);
+    free(*c);
+    *c = NULL;
+    return 1;
 }
 
 

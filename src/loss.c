@@ -1,4 +1,5 @@
 #include <math.h>
+#include <stdlib.h>
 
 #include "matrix.h"
 
@@ -12,6 +13,19 @@ float mse(struct matrix reales, struct matrix esperadas){
         return resultado/nDatos;
     }
     return -1; 
+}
+
+struct matrix *mseDerivada(struct matrix reales, struct matrix esperadas){
+    if(reales.col == esperadas.col && reales.fil == esperadas.fil){
+        int nDatos = reales.fil * reales.col;
+        struct matrix *resultado;
+        crearMatriz(&resultado, reales.col, reales.fil);
+        for (int i=0; i<nDatos; i++){
+            resultado->datos[i] = (esperadas.datos[i] - reales.datos[i])/nDatos;
+        }
+        return resultado;
+    }
+    return NULL;  
 }
 
 

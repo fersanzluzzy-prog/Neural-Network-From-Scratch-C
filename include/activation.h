@@ -6,9 +6,12 @@
 #include "matrix.h"
 
 int relu(struct matrix *entradas, struct matrix *salidas);
+int reluDerivada(struct matrix *entradas, struct matrix *salidas);
 
 int sigmoide(struct matrix *entradas, struct matrix *salidas);
+int sigmoideDerivada(struct matrix *entradasSigmoide, struct matrix *salidas);
 
 int taNh(struct matrix *entradas, struct matrix *salidas);
+int taNhDerivada(struct matrix *entradas, struct matrix *salidas);
 
 #endif

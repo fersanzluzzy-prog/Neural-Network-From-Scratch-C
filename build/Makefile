@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C
+CMAKE_SOURCE_DIR = C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build
+CMAKE_BINARY_DIR = C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -205,6 +205,19 @@ test_loss: cmake_check_build_system
 test_loss/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/build
 .PHONY : test_loss/fast
+
+#=============================================================================
+# Target rules for targets named test_cache
+
+# Build rule for target.
+test_cache: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cache
+.PHONY : test_cache
+
+# fast build rule for target.
+test_cache/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/build
+.PHONY : test_cache/fast
 
 src/activation.obj: src/activation.c.obj
 .PHONY : src/activation.obj
@@ -350,6 +363,30 @@ tests/test_activation.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/tests/test_activation.c.s
 .PHONY : tests/test_activation.c.s
 
+tests/test_cache.obj: tests/test_cache.c.obj
+.PHONY : tests/test_cache.obj
+
+# target to build an object file
+tests/test_cache.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/tests/test_cache.c.obj
+.PHONY : tests/test_cache.c.obj
+
+tests/test_cache.i: tests/test_cache.c.i
+.PHONY : tests/test_cache.i
+
+# target to preprocess a source file
+tests/test_cache.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/tests/test_cache.c.i
+.PHONY : tests/test_cache.c.i
+
+tests/test_cache.s: tests/test_cache.c.s
+.PHONY : tests/test_cache.s
+
+# target to generate assembly for a file
+tests/test_cache.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/tests/test_cache.c.s
+.PHONY : tests/test_cache.c.s
+
 tests/test_layer.obj: tests/test_layer.c.obj
 .PHONY : tests/test_layer.obj
 
@@ -480,6 +517,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... NeuralNetwork
 	@echo ... test_activation
+	@echo ... test_cache
 	@echo ... test_layer
 	@echo ... test_loss
 	@echo ... test_matrix
@@ -503,6 +541,9 @@ help:
 	@echo ... tests/test_activation.obj
 	@echo ... tests/test_activation.i
 	@echo ... tests/test_activation.s
+	@echo ... tests/test_cache.obj
+	@echo ... tests/test_cache.i
+	@echo ... tests/test_cache.s
 	@echo ... tests/test_layer.obj
 	@echo ... tests/test_layer.i
 	@echo ... tests/test_layer.s
