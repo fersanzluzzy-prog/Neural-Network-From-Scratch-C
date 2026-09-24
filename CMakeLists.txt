@@ -43,8 +43,8 @@ target_link_libraries(test_activation NeuralNetwork)
 add_executable(test_network tests/test_network.c)
 target_link_libraries(test_network NeuralNetwork)
 
-add_executable(test_loss tests/test_loss.c)
-target_link_libraries(test_loss NeuralNetwork)
-
 add_executable(test_cache tests/test_cache.c)
 target_link_libraries(test_cache NeuralNetwork)
+
+add_executable(test_backprop tests/test_backprop.c)
+target_link_libraries(test_backprop NeuralNetwork)

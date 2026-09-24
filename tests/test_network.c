@@ -173,7 +173,7 @@ int main(void)
     };
 
     inicializarMatriz(entrada, datosEntrada);
-
+    
     struct matrix *salida = forwardRed(red, entrada);
 
     if(salida != NULL)

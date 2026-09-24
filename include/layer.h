@@ -16,12 +16,18 @@ struct layer{
     int nEntradas;
     int nSalidas;
     activacion activacion;
-
+    struct gradientesLayer *gradientes;
 };
 
 struct cache{
     struct matrix *a;
     struct matrix *z;
+};
+
+struct gradientesLayer{
+    struct matrix *dL_dw;
+    struct matrix *dL_db;
+    struct matrix *dL_dz;
 };
 
 int crearLayer(struct matrix *pesos, struct matrix *bias, activacion activacion, struct layer **resultado);

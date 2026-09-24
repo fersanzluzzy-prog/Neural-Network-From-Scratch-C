@@ -15,17 +15,16 @@ float mse(struct matrix reales, struct matrix esperadas){
     return -1; 
 }
 
-struct matrix *mseDerivada(struct matrix reales, struct matrix esperadas){
+int mseDerivada(struct matrix reales, struct matrix esperadas, struct matrix *resultado){
     if(reales.col == esperadas.col && reales.fil == esperadas.fil){
         int nDatos = reales.fil * reales.col;
-        struct matrix *resultado;
         crearMatriz(&resultado, reales.col, reales.fil);
         for (int i=0; i<nDatos; i++){
             resultado->datos[i] = (esperadas.datos[i] - reales.datos[i])/nDatos;
         }
-        return resultado;
+        return 1;
     }
-    return NULL;  
+    return -1;  
 }
 
 

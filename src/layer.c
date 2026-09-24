@@ -1,4 +1,5 @@
 #include "layer.h"
+#include "loss.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -18,6 +19,7 @@ int crearLayer(struct matrix *pesos, struct matrix *bias, activacion activacion,
         (*resultado)->pesos = pesos;
         (*resultado)->bias = bias;
         (*resultado)->activacion = activacion;
+        (*resultado)->gradientes = NULL;
         return 1;
     }
     return -1;
@@ -26,6 +28,7 @@ int crearLayer(struct matrix *pesos, struct matrix *bias, activacion activacion,
 void eliminarLayer(struct layer **layer){
     eliminarMatriz(&(*layer)->pesos);
     eliminarMatriz(&(*layer)->bias);
+    free((*layer)->gradientes);
     free(*layer);
     *layer = NULL;
 }
@@ -91,12 +94,3 @@ int eliminarCacheLayer(struct cache **c){
     *c = NULL;
     return 1;
 }
-
-
-
-
-
-
-
-
-

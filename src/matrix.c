@@ -176,7 +176,7 @@ int multiplicacionMatricial(struct matrix *m1, struct matrix *m2, struct matrix 
         return 1;
     }
     else {
-        printf("Las matrices deben tener las mismas dimensiones.");
+        printf("Las matrices deben tener unas dimensiones adecuadas para multiplicarlas.");
         return -1;
     }
 }

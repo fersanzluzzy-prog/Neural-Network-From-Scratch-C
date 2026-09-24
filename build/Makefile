@@ -194,19 +194,6 @@ test_network/fast:
 .PHONY : test_network/fast
 
 #=============================================================================
-# Target rules for targets named test_loss
-
-# Build rule for target.
-test_loss: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_loss
-.PHONY : test_loss
-
-# fast build rule for target.
-test_loss/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/build
-.PHONY : test_loss/fast
-
-#=============================================================================
 # Target rules for targets named test_cache
 
 # Build rule for target.
@@ -218,6 +205,19 @@ test_cache: cmake_check_build_system
 test_cache/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/build
 .PHONY : test_cache/fast
+
+#=============================================================================
+# Target rules for targets named test_backprop
+
+# Build rule for target.
+test_backprop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_backprop
+.PHONY : test_backprop
+
+# fast build rule for target.
+test_backprop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/build
+.PHONY : test_backprop/fast
 
 src/activation.obj: src/activation.c.obj
 .PHONY : src/activation.obj
@@ -363,6 +363,30 @@ tests/test_activation.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/tests/test_activation.c.s
 .PHONY : tests/test_activation.c.s
 
+tests/test_backprop.obj: tests/test_backprop.c.obj
+.PHONY : tests/test_backprop.obj
+
+# target to build an object file
+tests/test_backprop.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/tests/test_backprop.c.obj
+.PHONY : tests/test_backprop.c.obj
+
+tests/test_backprop.i: tests/test_backprop.c.i
+.PHONY : tests/test_backprop.i
+
+# target to preprocess a source file
+tests/test_backprop.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/tests/test_backprop.c.i
+.PHONY : tests/test_backprop.c.i
+
+tests/test_backprop.s: tests/test_backprop.c.s
+.PHONY : tests/test_backprop.s
+
+# target to generate assembly for a file
+tests/test_backprop.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/tests/test_backprop.c.s
+.PHONY : tests/test_backprop.c.s
+
 tests/test_cache.obj: tests/test_cache.c.obj
 .PHONY : tests/test_cache.obj
 
@@ -410,30 +434,6 @@ tests/test_layer.s: tests/test_layer.c.s
 tests/test_layer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/tests/test_layer.c.s
 .PHONY : tests/test_layer.c.s
-
-tests/test_loss.obj: tests/test_loss.c.obj
-.PHONY : tests/test_loss.obj
-
-# target to build an object file
-tests/test_loss.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.obj
-.PHONY : tests/test_loss.c.obj
-
-tests/test_loss.i: tests/test_loss.c.i
-.PHONY : tests/test_loss.i
-
-# target to preprocess a source file
-tests/test_loss.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.i
-.PHONY : tests/test_loss.c.i
-
-tests/test_loss.s: tests/test_loss.c.s
-.PHONY : tests/test_loss.s
-
-# target to generate assembly for a file
-tests/test_loss.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.s
-.PHONY : tests/test_loss.c.s
 
 tests/test_matrix.obj: tests/test_matrix.c.obj
 .PHONY : tests/test_matrix.obj
@@ -517,9 +517,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... NeuralNetwork
 	@echo ... test_activation
+	@echo ... test_backprop
 	@echo ... test_cache
 	@echo ... test_layer
-	@echo ... test_loss
 	@echo ... test_matrix
 	@echo ... test_matrix_mult
 	@echo ... test_network
@@ -541,15 +541,15 @@ help:
 	@echo ... tests/test_activation.obj
 	@echo ... tests/test_activation.i
 	@echo ... tests/test_activation.s
+	@echo ... tests/test_backprop.obj
+	@echo ... tests/test_backprop.i
+	@echo ... tests/test_backprop.s
 	@echo ... tests/test_cache.obj
 	@echo ... tests/test_cache.i
 	@echo ... tests/test_cache.s
 	@echo ... tests/test_layer.obj
 	@echo ... tests/test_layer.i
 	@echo ... tests/test_layer.s
-	@echo ... tests/test_loss.obj
-	@echo ... tests/test_loss.i
-	@echo ... tests/test_loss.s
 	@echo ... tests/test_matrix.obj
 	@echo ... tests/test_matrix.i
 	@echo ... tests/test_matrix.s

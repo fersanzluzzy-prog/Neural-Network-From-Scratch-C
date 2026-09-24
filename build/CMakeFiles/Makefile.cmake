@@ -57,6 +57,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_matrix_mult.dir/DependInfo.cmake"
   "CMakeFiles/test_activation.dir/DependInfo.cmake"
   "CMakeFiles/test_network.dir/DependInfo.cmake"
-  "CMakeFiles/test_loss.dir/DependInfo.cmake"
   "CMakeFiles/test_cache.dir/DependInfo.cmake"
+  "CMakeFiles/test_backprop.dir/DependInfo.cmake"
   )

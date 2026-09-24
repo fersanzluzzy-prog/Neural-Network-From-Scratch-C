@@ -47,6 +47,7 @@ CMakeFiles/NeuralNetwork.dir/src/layer.c.obj: C:/Users/Nando/Desktop/c/Neural-Ne
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/activation.h \
   C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/layer.h \
+  C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/loss.h \
   C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/matrix.h
 
 CMakeFiles/NeuralNetwork.dir/src/loss.c.obj: C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/src/loss.c \
@@ -111,6 +112,7 @@ CMakeFiles/NeuralNetwork.dir/src/network.c.obj: C:/Users/Nando/Desktop/c/Neural-
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/activation.h \
   C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/layer.h \
+  C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/loss.h \
   C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/matrix.h \
   C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/network.h
 
@@ -166,6 +168,8 @@ C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/src/network.c:
 C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/matrix.h:
 
 C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/src/layer.c:
+
+C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/include/loss.h:
 
 C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/src/loss.c:
 

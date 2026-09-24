@@ -68,8 +68,8 @@ all: CMakeFiles/test_layer.dir/all
 all: CMakeFiles/test_matrix_mult.dir/all
 all: CMakeFiles/test_activation.dir/all
 all: CMakeFiles/test_network.dir/all
-all: CMakeFiles/test_loss.dir/all
 all: CMakeFiles/test_cache.dir/all
+all: CMakeFiles/test_backprop.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -79,8 +79,8 @@ codegen: CMakeFiles/test_layer.dir/codegen
 codegen: CMakeFiles/test_matrix_mult.dir/codegen
 codegen: CMakeFiles/test_activation.dir/codegen
 codegen: CMakeFiles/test_network.dir/codegen
-codegen: CMakeFiles/test_loss.dir/codegen
 codegen: CMakeFiles/test_cache.dir/codegen
+codegen: CMakeFiles/test_backprop.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -94,8 +94,8 @@ clean: CMakeFiles/test_layer.dir/clean
 clean: CMakeFiles/test_matrix_mult.dir/clean
 clean: CMakeFiles/test_activation.dir/clean
 clean: CMakeFiles/test_network.dir/clean
-clean: CMakeFiles/test_loss.dir/clean
 clean: CMakeFiles/test_cache.dir/clean
+clean: CMakeFiles/test_backprop.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -169,7 +169,7 @@ CMakeFiles/test_matrix.dir/clean:
 CMakeFiles/test_layer.dir/all: CMakeFiles/NeuralNetwork.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=11,12 "Built target test_layer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=13,14 "Built target test_layer"
 .PHONY : CMakeFiles/test_layer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -186,7 +186,7 @@ test_layer: CMakeFiles/test_layer.dir/rule
 # codegen rule for target.
 CMakeFiles/test_layer.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=11,12 "Finished codegen for target test_layer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=13,14 "Finished codegen for target test_layer"
 .PHONY : CMakeFiles/test_layer.dir/codegen
 
 # clean rule for target.
@@ -291,45 +291,13 @@ CMakeFiles/test_network.dir/clean:
 .PHONY : CMakeFiles/test_network.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_loss.dir
-
-# All Build rule for target.
-CMakeFiles/test_loss.dir/all: CMakeFiles/NeuralNetwork.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=13,14 "Built target test_loss"
-.PHONY : CMakeFiles/test_loss.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_loss.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_loss.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles 0
-.PHONY : CMakeFiles/test_loss.dir/rule
-
-# Convenience name for target.
-test_loss: CMakeFiles/test_loss.dir/rule
-.PHONY : test_loss
-
-# codegen rule for target.
-CMakeFiles/test_loss.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=13,14 "Finished codegen for target test_loss"
-.PHONY : CMakeFiles/test_loss.dir/codegen
-
-# clean rule for target.
-CMakeFiles/test_loss.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/clean
-.PHONY : CMakeFiles/test_loss.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/test_cache.dir
 
 # All Build rule for target.
 CMakeFiles/test_cache.dir/all: CMakeFiles/NeuralNetwork.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=9,10 "Built target test_cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=11,12 "Built target test_cache"
 .PHONY : CMakeFiles/test_cache.dir/all
 
 # Build rule for subdir invocation for target.
@@ -346,13 +314,45 @@ test_cache: CMakeFiles/test_cache.dir/rule
 # codegen rule for target.
 CMakeFiles/test_cache.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=9,10 "Finished codegen for target test_cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=11,12 "Finished codegen for target test_cache"
 .PHONY : CMakeFiles/test_cache.dir/codegen
 
 # clean rule for target.
 CMakeFiles/test_cache.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/clean
 .PHONY : CMakeFiles/test_cache.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_backprop.dir
+
+# All Build rule for target.
+CMakeFiles/test_backprop.dir/all: CMakeFiles/NeuralNetwork.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=9,10 "Built target test_backprop"
+.PHONY : CMakeFiles/test_backprop.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_backprop.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_backprop.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles 0
+.PHONY : CMakeFiles/test_backprop.dir/rule
+
+# Convenience name for target.
+test_backprop: CMakeFiles/test_backprop.dir/rule
+.PHONY : test_backprop
+
+# codegen rule for target.
+CMakeFiles/test_backprop.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles --progress-num=9,10 "Finished codegen for target test_backprop"
+.PHONY : CMakeFiles/test_backprop.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_backprop.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/clean
+.PHONY : CMakeFiles/test_backprop.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
