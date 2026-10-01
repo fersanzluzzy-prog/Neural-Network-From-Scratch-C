@@ -27,7 +27,7 @@ struct cache{
 struct gradientesLayer{
     struct matrix *dL_dw;
     struct matrix *dL_db;
-    struct matrix *dL_dz;
+    struct matrix *dL_dx;
 };
 
 int crearLayer(struct matrix *pesos, struct matrix *bias, activacion activacion, struct layer **resultado);
@@ -35,8 +35,6 @@ int crearLayer(struct matrix *pesos, struct matrix *bias, activacion activacion,
 void eliminarLayer(struct layer **layer);
 
 struct cache *forward(struct matrix *entradas, struct layer *layer, struct matrix *salidas);
-
-struct cache *guardarCacheLayer(struct matrix a1, struct matrix z1);
 
 struct cache *inicializarCache();
 

@@ -10,25 +10,43 @@ int crearLayer(struct matrix *pesos, struct matrix *bias, activacion activacion,
 
     if(*resultado==NULL){
         printf("Error al reservar memoria creando capa.");
-        return -1;
-    }
-
-    if(pesos->fil == bias->fil || bias->col == 1){
-        (*resultado)->nSalidas = bias->fil;
-        (*resultado)->nEntradas = pesos->col;
-        (*resultado)->pesos = pesos;
-        (*resultado)->bias = bias;
-        (*resultado)->activacion = activacion;
-        (*resultado)->gradientes = NULL;
         return 1;
     }
-    return -1;
-}
 
+    if(pesos->fil == bias->fil && bias->col == 1){ //batches creo
+        (*resultado)->nSalidas = bias->fil;
+        (*resultado)->nEntradas = pesos->col;
+
+        crearMatriz(&(*resultado)->pesos, pesos->fil, pesos->col);
+        crearMatriz(&(*resultado)->bias, bias->fil, bias->col);
+        copiarMatriz(pesos, (*resultado)->pesos);
+        copiarMatriz(bias, (*resultado)->bias);
+        
+        (*resultado)->activacion = activacion;
+        (*resultado)->gradientes = NULL;
+        return 0;
+    }
+    return 1;
+}
 void eliminarLayer(struct layer **layer){
+
+    if(layer == NULL || *layer == NULL){
+        return;
+    }
+
     eliminarMatriz(&(*layer)->pesos);
     eliminarMatriz(&(*layer)->bias);
-    free((*layer)->gradientes);
+
+    if((*layer)->gradientes != NULL){
+
+        eliminarMatriz(&(*layer)->gradientes->dL_dw);
+        eliminarMatriz(&(*layer)->gradientes->dL_db);
+        eliminarMatriz(&(*layer)->gradientes->dL_dx);
+
+        free((*layer)->gradientes);
+        (*layer)->gradientes = NULL;
+    }
+
     free(*layer);
     *layer = NULL;
 }
@@ -88,9 +106,13 @@ void guardarCacheLayerZ(struct cache *cache, struct matrix z1){
 }
 
 int eliminarCacheLayer(struct cache **c){
-    free((*c)->a);
-    free((*c)->z);
+    if(c == NULL || *c == NULL){
+        return 0;
+    }
+    
+    eliminarMatriz(&(*c)->a);
+    eliminarMatriz(&(*c)->z);
     free(*c);
     *c = NULL;
-    return 1;
+    return 0;
 }

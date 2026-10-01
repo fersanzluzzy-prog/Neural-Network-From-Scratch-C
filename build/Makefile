@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C
+CMAKE_SOURCE_DIR = C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build
+CMAKE_BINARY_DIR = C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Nando\Desktop\c\Neural-Network-From-Scratch-C\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nsanz\Desktop\proyectos\Neural-Network-From-Scratch-C\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,19 +155,6 @@ test_layer/fast:
 .PHONY : test_layer/fast
 
 #=============================================================================
-# Target rules for targets named test_matrix_mult
-
-# Build rule for target.
-test_matrix_mult: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_matrix_mult
-.PHONY : test_matrix_mult
-
-# fast build rule for target.
-test_matrix_mult/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/build
-.PHONY : test_matrix_mult/fast
-
-#=============================================================================
 # Target rules for targets named test_activation
 
 # Build rule for target.
@@ -207,17 +194,17 @@ test_cache/fast:
 .PHONY : test_cache/fast
 
 #=============================================================================
-# Target rules for targets named test_backprop
+# Target rules for targets named test_loss
 
 # Build rule for target.
-test_backprop: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_backprop
-.PHONY : test_backprop
+test_loss: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_loss
+.PHONY : test_loss
 
 # fast build rule for target.
-test_backprop/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/build
-.PHONY : test_backprop/fast
+test_loss/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/build
+.PHONY : test_loss/fast
 
 src/activation.obj: src/activation.c.obj
 .PHONY : src/activation.obj
@@ -363,30 +350,6 @@ tests/test_activation.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_activation.dir\build.make CMakeFiles/test_activation.dir/tests/test_activation.c.s
 .PHONY : tests/test_activation.c.s
 
-tests/test_backprop.obj: tests/test_backprop.c.obj
-.PHONY : tests/test_backprop.obj
-
-# target to build an object file
-tests/test_backprop.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/tests/test_backprop.c.obj
-.PHONY : tests/test_backprop.c.obj
-
-tests/test_backprop.i: tests/test_backprop.c.i
-.PHONY : tests/test_backprop.i
-
-# target to preprocess a source file
-tests/test_backprop.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/tests/test_backprop.c.i
-.PHONY : tests/test_backprop.c.i
-
-tests/test_backprop.s: tests/test_backprop.c.s
-.PHONY : tests/test_backprop.s
-
-# target to generate assembly for a file
-tests/test_backprop.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_backprop.dir\build.make CMakeFiles/test_backprop.dir/tests/test_backprop.c.s
-.PHONY : tests/test_backprop.c.s
-
 tests/test_cache.obj: tests/test_cache.c.obj
 .PHONY : tests/test_cache.obj
 
@@ -435,6 +398,30 @@ tests/test_layer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_layer.dir\build.make CMakeFiles/test_layer.dir/tests/test_layer.c.s
 .PHONY : tests/test_layer.c.s
 
+tests/test_loss.obj: tests/test_loss.c.obj
+.PHONY : tests/test_loss.obj
+
+# target to build an object file
+tests/test_loss.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.obj
+.PHONY : tests/test_loss.c.obj
+
+tests/test_loss.i: tests/test_loss.c.i
+.PHONY : tests/test_loss.i
+
+# target to preprocess a source file
+tests/test_loss.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.i
+.PHONY : tests/test_loss.c.i
+
+tests/test_loss.s: tests/test_loss.c.s
+.PHONY : tests/test_loss.s
+
+# target to generate assembly for a file
+tests/test_loss.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/tests/test_loss.c.s
+.PHONY : tests/test_loss.c.s
+
 tests/test_matrix.obj: tests/test_matrix.c.obj
 .PHONY : tests/test_matrix.obj
 
@@ -458,30 +445,6 @@ tests/test_matrix.s: tests/test_matrix.c.s
 tests/test_matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix.dir\build.make CMakeFiles/test_matrix.dir/tests/test_matrix.c.s
 .PHONY : tests/test_matrix.c.s
-
-tests/test_matrix_mult.obj: tests/test_matrix_mult.c.obj
-.PHONY : tests/test_matrix_mult.obj
-
-# target to build an object file
-tests/test_matrix_mult.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.obj
-.PHONY : tests/test_matrix_mult.c.obj
-
-tests/test_matrix_mult.i: tests/test_matrix_mult.c.i
-.PHONY : tests/test_matrix_mult.i
-
-# target to preprocess a source file
-tests/test_matrix_mult.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.i
-.PHONY : tests/test_matrix_mult.c.i
-
-tests/test_matrix_mult.s: tests/test_matrix_mult.c.s
-.PHONY : tests/test_matrix_mult.s
-
-# target to generate assembly for a file
-tests/test_matrix_mult.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_matrix_mult.dir\build.make CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.s
-.PHONY : tests/test_matrix_mult.c.s
 
 tests/test_network.obj: tests/test_network.c.obj
 .PHONY : tests/test_network.obj
@@ -517,11 +480,10 @@ help:
 	@echo ... rebuild_cache
 	@echo ... NeuralNetwork
 	@echo ... test_activation
-	@echo ... test_backprop
 	@echo ... test_cache
 	@echo ... test_layer
+	@echo ... test_loss
 	@echo ... test_matrix
-	@echo ... test_matrix_mult
 	@echo ... test_network
 	@echo ... src/activation.obj
 	@echo ... src/activation.i
@@ -541,21 +503,18 @@ help:
 	@echo ... tests/test_activation.obj
 	@echo ... tests/test_activation.i
 	@echo ... tests/test_activation.s
-	@echo ... tests/test_backprop.obj
-	@echo ... tests/test_backprop.i
-	@echo ... tests/test_backprop.s
 	@echo ... tests/test_cache.obj
 	@echo ... tests/test_cache.i
 	@echo ... tests/test_cache.s
 	@echo ... tests/test_layer.obj
 	@echo ... tests/test_layer.i
 	@echo ... tests/test_layer.s
+	@echo ... tests/test_loss.obj
+	@echo ... tests/test_loss.i
+	@echo ... tests/test_loss.s
 	@echo ... tests/test_matrix.obj
 	@echo ... tests/test_matrix.i
 	@echo ... tests/test_matrix.s
-	@echo ... tests/test_matrix_mult.obj
-	@echo ... tests/test_matrix_mult.i
-	@echo ... tests/test_matrix_mult.s
 	@echo ... tests/test_network.obj
 	@echo ... tests/test_network.i
 	@echo ... tests/test_network.s

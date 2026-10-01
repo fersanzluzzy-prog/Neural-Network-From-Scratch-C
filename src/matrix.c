@@ -23,18 +23,43 @@ void eliminarMatriz(struct matrix **matriz){
     *matriz = NULL;
 }
 
-void imprimirMatriz(struct matrix matriz){
-    int filas = matriz.fil;
-    int columnas = matriz.col;
-    
-    for(int i=0; i < filas; i++){
-        
-        for(int j=0; j < columnas; j++){
-            printf("%f, ", matriz.datos[columnas*(i) + j ]);
-        }
-        printf("\n");
+//hecho con IA
+/*void imprimirMatriz(
+    const char *nombre,
+    const struct matrix *m)
+{
+    int i;
+    int j;
+
+    if (m == NULL)
+    {
+        printf("%s = NULL\n", nombre);
+        return;
     }
-}
+
+    printf("%s [%d x %d]\n", nombre, m->fil, m->col);
+
+    if (m->datos == NULL)
+    {
+        printf("  datos = NULL\n");
+        return;
+    }
+
+    for (i = 0; i < m->fil; i++)
+    {
+        printf("  [ ");
+
+        for (j = 0; j < m->col; j++)
+        {
+            printf("% .8f", m->datos[i * m->col + j]);
+
+            if (j < m->col - 1)
+                printf(", ");
+        }
+
+        printf(" ]\n");
+    }
+}*/
 
 void inicializarMatriz(struct matrix *matriz, float *Ndatos){
     int filas = matriz->fil;
@@ -92,40 +117,34 @@ void inicializarRandom(struct matrix *matriz, float min, float max){
     }
 }
 
-//devuelve -1 si las dimensiones no son correctas
+//devuelve 1 si las dimensiones no son correctas
 int transponerMatriz(struct matrix *m1, struct matrix *resultado){
     //comprobacion de que las dimensiones son correctas
     if(resultado->col == m1->fil && resultado->fil == m1->col){
-
-        resultado->col = m1->fil;
-        resultado->fil = m1->col;
-        for(int i=0; i<m1->fil; i++) {
-            for(int j=0; j<m1->col; j++) {
-                modificarPos(resultado, i, j, *accederPos(m1, j, i));
-            }        
+        for (int i=0; i<m1->col; i++){
+            for (int j=0; j<m1->fil; j++){
+                resultado->datos[i * m1->fil + j] = m1->datos[j * resultado->fil + i];
+            }
         }
-        return 1;
+        return 0;
     }
-    else{return -1;}
+    else{return 1;}
 }
 
-//devuelve -1 si las dimensiones son incorrectas
+//devuelve 1 si las dimensiones son incorrectas
 int multiplicarEscalar(struct matrix *m1, float x, struct matrix *resultado){
     //comprobacion de que las dimensiones son correctas
-    if(resultado->col == m1->fil && resultado->fil == m1->col){
-
-        resultado->col = m1->fil;
-        resultado->fil = m1->col;
+    if(resultado->col == m1->col && resultado->fil == m1->fil){
         for(int i=0; i < resultado->col * resultado->fil; i++){
             resultado->datos[i] = m1->datos[i] * x;
         }
-        return 1;
+        return 0;
     }
-    else{return -1;}
+    else{return 1;}
     
 }
 
-//Devuelve -1 si las matrices no tienen las mismas dimensiones
+//Devuelve 1 si las matrices no tienen las mismas dimensiones
 int suma(struct matrix m1, struct matrix m2, struct matrix *resultado){
 
     if(m1.fil == m2.fil && m1.col == m2.col){
@@ -134,15 +153,15 @@ int suma(struct matrix m1, struct matrix m2, struct matrix *resultado){
         for (int i=0; i < resultado->col * resultado->fil; i++){
             resultado->datos[i] = m1.datos[i] + m2.datos[i];
         }
-        return 1;
+        return 0;
     }
     else {
         printf("Las matrices deben tener las mismas dimensiones.");
-        return -1;
+        return 1;
     }
 }
 
-//m1 - m2. Devuelve -1 si las matrices no tienen las mismas dimensiones
+//m1 - m2. Devuelve 1 si las matrices no tienen las mismas dimensiones
 int resta(struct matrix m1, struct matrix m2, struct matrix *resultado){
 
     if(m1.fil == m2.fil && m1.col == m2.col){
@@ -151,15 +170,15 @@ int resta(struct matrix m1, struct matrix m2, struct matrix *resultado){
         for (int i=0; i < resultado->col * resultado->fil; i++){
             resultado->datos[i] = m1.datos[i] - m2.datos[i];
         }
-        return 1;
+        return 0;
     }
     else {
         printf("Las matrices deben tener las mismas dimensiones.");
-        return -1;
+        return 1;
     }
 }
 
-//m1 x m2. Devuelve -1 si las matrices no tienen las dimensiones adecuadas
+//m1 x m2. Devuelve 1 si las matrices no tienen las dimensiones adecuadas
 int multiplicacionMatricial(struct matrix *m1, struct matrix *m2, struct matrix *resultado){
     if(m1->col == m2->fil){
         resultado->col = m2->col;
@@ -173,13 +192,22 @@ int multiplicacionMatricial(struct matrix *m1, struct matrix *m2, struct matrix 
                 modificarPos(resultado, i, j, x);
             }
         }
-        return 1;
+        return 0;
     }
     else {
         printf("Las matrices deben tener unas dimensiones adecuadas para multiplicarlas.");
-        return -1;
+        return 1;
     }
 }
 
-
+//multiplicacion elemento por elemento
+int multiplicacionElemPorElem(struct matrix *m1, struct matrix *m2, struct matrix *resultado){
+    if(m1->col==m2->col && m1->fil==m2->fil){
+        for(int i=0; i<m1->col*m1->fil; i++){
+            resultado->datos[i] = m1->datos[i] * m2->datos[i];
+        }
+        return 0;
+    }
+    return 1;
+}
 

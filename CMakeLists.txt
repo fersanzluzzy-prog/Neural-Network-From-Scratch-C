@@ -34,9 +34,6 @@ target_link_libraries(test_matrix NeuralNetwork)
 add_executable(test_layer tests/test_layer.c)
 target_link_libraries(test_layer NeuralNetwork)
 
-add_executable(test_matrix_mult tests/test_matrix_mult.c)
-target_link_libraries(test_matrix_mult NeuralNetwork)
-
 add_executable(test_activation tests/test_activation.c)
 target_link_libraries(test_activation NeuralNetwork)
 
@@ -46,5 +43,5 @@ target_link_libraries(test_network NeuralNetwork)
 add_executable(test_cache tests/test_cache.c)
 target_link_libraries(test_cache NeuralNetwork)
 
-add_executable(test_backprop tests/test_backprop.c)
-target_link_libraries(test_backprop NeuralNetwork)
+add_executable(test_loss tests/test_loss.c)
+target_link_libraries(test_loss NeuralNetwork)

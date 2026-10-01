@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Nando/Desktop/c/Neural-Network-From-Scratch-C/tests/test_matrix_mult.c" "CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.obj" "gcc" "CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.obj.d"
+  "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/tests/test_matrix_mult.c" "CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.obj" "gcc" "CMakeFiles/test_matrix_mult.dir/tests/test_matrix_mult.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

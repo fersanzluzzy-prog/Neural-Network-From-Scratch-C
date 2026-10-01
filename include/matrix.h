@@ -9,8 +9,6 @@ struct matrix{
 
 void crearMatriz(struct matrix **resultado, int filas, int columnas);
 
-void imprimirMatriz(struct matrix matriz);
-
 void eliminarMatriz(struct matrix **resultado);
 
 void inicializarMatriz(struct matrix *matriz, float *Ndatos);
@@ -21,7 +19,7 @@ void modificarPos(struct matrix *matriz, int fila, int columna, float dato);
 
 void crearConNumero(struct matrix **resultado, int filas, int columnas, float numero);
 
-void copiarMatriz(struct matrix *m1, struct matrix *m2);
+void copiarMatriz(struct matrix *m1, struct matrix *m2); //deep copy, copia m1 en m2
 
 float numeroRandom(float min, float max);
 
@@ -36,5 +34,7 @@ int suma(struct matrix m1, struct matrix m2, struct matrix *resultado);
 int resta(struct matrix m1, struct matrix m2, struct matrix *resultado);
 
 int multiplicacionMatricial(struct matrix *m1, struct matrix *m2, struct matrix *resultado);
+
+int multiplicacionElemPorElem(struct matrix *m1, struct matrix *m2, struct matrix *resultado);
 
 #endif

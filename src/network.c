@@ -4,55 +4,59 @@
 #include <stdlib.h>
 
 int crearRed(struct network **resultado){
-    struct network *res = malloc(sizeof(struct network));
-    if(res == NULL){return -1;}
 
-    res->capas = NULL;
-    res->numeroCapas = 0;
-    res->cache = NULL;
-    *resultado = res;
-    res->entradas = NULL;
-    return 1;
+    *resultado = malloc(sizeof(struct network));
+    (*resultado)->capas = malloc(sizeof(struct layer *));
+    (*resultado)->numeroCapas = 0;
+    (*resultado)->cache = malloc(sizeof(struct cache *));
+    (*resultado)->entradas = malloc(sizeof(struct matrix));
+    return 0;
 }
 
 int añadirCapa(struct layer *capa, struct network *red){
-    if(red->capas == NULL){
-        red->capas = malloc(sizeof(struct layer *));
-        red->capas[0] = capa;
-        red->cache = malloc(sizeof(struct cache *));
-        red->numeroCapas++;
-        return 1;
+    int n = red->numeroCapas;
+    int nEntradasCapaNueva = capa->nEntradas;
+    int nSalidasUltimaCapa;
+    if(n == 0){
+        red->entradas->col = capa->bias->col;
+        red->entradas->fil = capa->bias->fil;
+        nSalidasUltimaCapa = nEntradasCapaNueva;
     }
-    else{
-        int n = red->numeroCapas;
-        int nEntradasCapaNueva = capa->nEntradas;
-        int nSalidasUltimaCapa = red->capas[n-1]->nSalidas;
-        if(nEntradasCapaNueva == nSalidasUltimaCapa){
-            struct layer **temporal = realloc(red->capas, n * sizeof(struct layer *));
-            if(temporal != NULL){
-                red->capas = temporal;
-                red->capas[n] = capa;
-                temporal = realloc(red->cache, n * sizeof(struct cache *));
-                if(temporal != NULL){
-                    red->numeroCapas++;
-                    return 1;
-                }
+    else {nSalidasUltimaCapa = red->capas[n-1]->nSalidas;}
+    if(nEntradasCapaNueva == nSalidasUltimaCapa){
+        struct layer **temporal1 = realloc(red->capas, (n+1) * sizeof(struct layer *));
+        if(temporal1 != NULL){
+            red->capas = temporal1;
+            red->capas[n] = capa;
+            struct cache **temporal2 = realloc(red->cache, (n+1) * sizeof(struct cache *));
+            if(temporal2 != NULL){
+                red->cache = temporal2;
+                red->numeroCapas++;
+                red->cache[n] = NULL;
+                return 0;
             }
-            return -1;
         }
-        return -1;
     }
+    return 1;
 }
 
 void eliminarRed(struct network **red){
+
+    if (red == NULL || *red == NULL)
+        return;
+
     int n = (*red)->numeroCapas;
-    for(int i=0; i<n; i++){
+
+    for (int i = 0; i < n; i++) {
         eliminarLayer(&(*red)->capas[i]);
         eliminarCacheLayer(&(*red)->cache[i]);
     }
+
     free((*red)->capas);
     free((*red)->cache);
     free((*red)->entradas);
+
+    free(*red);
     *red = NULL;
 }
 
@@ -62,7 +66,6 @@ struct matrix *forwardRed(struct network *red, struct matrix *entrada){
     struct matrix *copia;
     crearMatriz(&copia, 0, 0);
     copiarMatriz(entrada, copia);
-    red->entradas = malloc(sizeof(struct matrix));
     copiarMatriz(entrada, red->entradas);
 
     struct matrix *a;
@@ -85,82 +88,118 @@ struct matrix *forwardRed(struct network *red, struct matrix *entrada){
 
 int backpropRed(struct network *red, struct matrix resReales, struct matrix resCorrectos){
     if(resCorrectos.col == resReales.col && resCorrectos.fil == resReales.fil){
-        for(int i = red->numeroCapas - 1; i>=0; i++){
+        for(int i = red->numeroCapas - 1; i>=0; i--){
+
+            struct matrix *dL_da = malloc(sizeof(struct matrix));
+            struct matrix *da_dz = malloc(sizeof(struct matrix));
+            struct matrix *dL_dx = malloc(sizeof(struct matrix));
+            struct matrix *dL_dW = malloc(sizeof(struct matrix));
+            struct matrix *x = malloc(sizeof(struct matrix));
+            struct matrix *dL_dz = malloc(sizeof(struct matrix));
+
+            struct matrix *wT = malloc(sizeof(struct matrix));
+            struct matrix *xT = malloc(sizeof(struct matrix));
+
+
             red->capas[i]->gradientes = malloc(sizeof(struct gradientesLayer));
             red->capas[i]->gradientes->dL_db = malloc(sizeof(struct matrix));
             red->capas[i]->gradientes->dL_dw = malloc(sizeof(struct matrix));
-            red->capas[i]->gradientes->dL_dz = malloc(sizeof(struct matrix));
+            red->capas[i]->gradientes->dL_dx = malloc(sizeof(struct matrix));    
+        
+            //ultima capa
+            if(i == red->numeroCapas - 1){
+                //dL_da
+                crearMatriz(&dL_da, resReales.fil, resReales.col);
+                mseDerivada(resReales, resCorrectos, dL_da);
 
+                //dL_dx
+                crearMatriz(&dL_dx, red->cache[i-1]->a->fil, red->cache[i-1]->a->col);
+
+                //x
+                crearMatriz(&x, red->cache[i-1]->a->fil, red->cache[i-1]->a->col);
+                copiarMatriz(red->cache[i-1]->a, x);
+
+            }
+            //primera capa
+            else if(i == 0){
+
+                //dL_da
+                crearMatriz(&dL_da, red->capas[i+1]->gradientes->dL_dx->fil, red->capas[i+1]->gradientes->dL_dx->fil);
+                copiarMatriz(red->capas[i+1]->gradientes->dL_dx, dL_da);
+
+                //dL_dx
+                crearMatriz(&dL_dx, red->entradas->fil, red->entradas->col);
+
+                //x
+                crearMatriz(&x, red->entradas->fil, red->entradas->col);
+                copiarMatriz(red->entradas, x);
+
+            }
+            //capas intermedias
+            else{
+
+                //dL_da
+                crearMatriz(&dL_da, red->capas[i+1]->gradientes->dL_dx->fil, red->capas[i+1]->gradientes->dL_dx->fil);
+                copiarMatriz(red->capas[i+1]->gradientes->dL_dx, dL_da);
+                
+                //dL_dx
+                crearMatriz(&dL_dx, red->cache[i-1]->a->fil, red->cache[i-1]->a->col);
+            
+                //x
+                crearMatriz(&x, red->cache[i-1]->a->fil, red->cache[i-1]->a->col);
+                copiarMatriz(red->cache[i-1]->a, x);
+
+            }
+            
             //da_dz
-            struct matrix *da_dz = malloc(sizeof(struct matrix));
-            crearMatriz(&da_dz, resCorrectos.fil, resCorrectos.col);
+            crearMatriz(&da_dz, dL_da->fil, dL_da->col); 
             activacion actv = red->capas[i]->activacion;
             if(actv == RELU){
                 reluDerivada(red->cache[i]->z, da_dz);
             }
             else if(actv == SIGMOID){
-                sigmoideDerivada(red->cache[i]->z, da_dz);
+                sigmoideDerivada(red->cache[i]->a, da_dz);
             }
             else if(actv == TANH){
-                taNhDerivada(red->cache[i]->z, da_dz);
+                taNhDerivada(red->cache[i]->a, da_dz);
             }
 
-            //gradientes
-            struct matrix *dz_dw = malloc(sizeof(struct matrix));
-            if(i>0){
-                copiarMatriz(red->cache[i-1]->a, dz_dw); //batches en un futuro
-            }
-            else{copiarMatriz(red->entradas, dz_dw);}
+            //dL_dz = dl_da · da_dz
+            crearMatriz(&dL_dz, dL_da->fil, dL_da->col);
+            multiplicacionElemPorElem(dL_da, da_dz, dL_dz);
 
-            struct matrix *res = malloc(sizeof(struct matrix));
-            crearMatriz(&res, resReales.fil, 1); //batches en un futuro
+            //dL_dw = dL_dz x xT
+            crearMatriz(&dL_dW, red->capas[i]->pesos->fil, red->capas[i]->pesos->col);
+            crearMatriz(&xT, x->col, x->fil);
+            transponerMatriz(x, xT);
+            multiplicacionMatricial(dL_dz, xT, dL_dW);
 
-            if(i == red->numeroCapas - 1){
-                //dL_da y dL_dz
-                struct matrix *dL_da = malloc(sizeof(struct matrix));
-                crearMatriz(&dL_da, resCorrectos.fil, resCorrectos.col);
-                mseDerivada(resReales, resCorrectos, dL_da);
-                multiplicacionMatricial(dL_da, da_dz, res);
-            }  
-            else{res = red->capas[i-1]->gradientes->dL_dz;}
-            transponerMatriz(res,red->capas[i]->gradientes->dL_dz);
+            //dL_dx = wT x dL_dz
+            crearMatriz(&wT, red->capas[i]->pesos->col, red->capas[i]->pesos->fil);
+            transponerMatriz(red->capas[i]->pesos, wT);
+            multiplicacionMatricial(wT, dL_dz, dL_dx);
 
-            // dL/dw
-            struct matrix *dL_dw = malloc(sizeof(struct matrix));
-            crearMatriz(&dL_dw, red->capas[i]->nEntradas, red->capas[i]->nSalidas);
-            if(i!=0){
-                struct matrix *aux = malloc(sizeof(struct matrix));
-                crearMatriz(&aux, red->cache[i-1]->a->fil, red->cache[i-1]->a->col);
-                transponerMatriz(red->cache[i-1]->a, aux);
-                multiplicacionMatricial(res, aux, dL_dw);
-                free(aux);
-            }
-            else{
-                struct matrix *aux = malloc(sizeof(struct matrix));
-                crearMatriz(&aux, red->cache[i-1]->a->fil, red->cache[i-1]->a->col);
-                transponerMatriz(red->cache[i-1]->a, aux);
-                free(aux);
-                multiplicacionMatricial(res, red->entradas, dL_dw);
-            }
-            *red->capas[i]->gradientes->dL_dw = *dL_dw;
-            // dL/db
-            struct matrix *dL_db = malloc(sizeof(struct matrix));
-            crearMatriz(&dL_db, red->capas[i]->bias->fil, red->capas[i]->bias->col);
-            struct matrix *unos = malloc(sizeof(struct matrix));
-            crearConNumero(&unos, red->capas[i]->bias->fil, red->capas[i]->bias->col, 1.0);
-            multiplicacionMatricial(res, unos, dL_db);
-            *red->capas[i]->gradientes->dL_db = *dL_db;
+            //dL_db = dL_dz
+            //batches, lo voy a obviar hasta añadirlos
 
-            free(da_dz);
-            free(dz_dw);
-            free(dL_dw);
-            free(dL_db);
+            //guardar gradientes
+            copiarMatriz(dL_dz, red->capas[i]->gradientes->dL_db); //batches
+            copiarMatriz(dL_dW, red->capas[i]->gradientes->dL_dw);
+            copiarMatriz(dL_dx, red->capas[i]->gradientes->dL_dx);
+
+            eliminarMatriz(&dL_da);
+            eliminarMatriz(&da_dz);
+            eliminarMatriz(&dL_dx);
+            eliminarMatriz(&dL_dW);
+            eliminarMatriz(&dL_dz);
+            eliminarMatriz(&wT);
+            eliminarMatriz(&xT);
         }
-
-        return 1;
+        return 0;
     }
-    return -1;
+    return 1;
 }
+
 
 
 
