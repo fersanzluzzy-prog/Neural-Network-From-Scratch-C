@@ -206,6 +206,32 @@ test_loss/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_loss.dir\build.make CMakeFiles/test_loss.dir/build
 .PHONY : test_loss/fast
 
+#=============================================================================
+# Target rules for targets named test_descensoGradiente
+
+# Build rule for target.
+test_descensoGradiente: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_descensoGradiente
+.PHONY : test_descensoGradiente
+
+# fast build rule for target.
+test_descensoGradiente/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_descensoGradiente.dir\build.make CMakeFiles/test_descensoGradiente.dir/build
+.PHONY : test_descensoGradiente/fast
+
+#=============================================================================
+# Target rules for targets named test_training
+
+# Build rule for target.
+test_training: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_training
+.PHONY : test_training
+
+# fast build rule for target.
+test_training/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_training.dir\build.make CMakeFiles/test_training.dir/build
+.PHONY : test_training/fast
+
 src/activation.obj: src/activation.c.obj
 .PHONY : src/activation.obj
 
@@ -326,6 +352,30 @@ src/network.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/network.c.s
 .PHONY : src/network.c.s
 
+src/training.obj: src/training.c.obj
+.PHONY : src/training.obj
+
+# target to build an object file
+src/training.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/training.c.obj
+.PHONY : src/training.c.obj
+
+src/training.i: src/training.c.i
+.PHONY : src/training.i
+
+# target to preprocess a source file
+src/training.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/training.c.i
+.PHONY : src/training.c.i
+
+src/training.s: src/training.c.s
+.PHONY : src/training.s
+
+# target to generate assembly for a file
+src/training.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NeuralNetwork.dir\build.make CMakeFiles/NeuralNetwork.dir/src/training.c.s
+.PHONY : src/training.c.s
+
 tests/test_activation.obj: tests/test_activation.c.obj
 .PHONY : tests/test_activation.obj
 
@@ -373,6 +423,30 @@ tests/test_cache.s: tests/test_cache.c.s
 tests/test_cache.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cache.dir\build.make CMakeFiles/test_cache.dir/tests/test_cache.c.s
 .PHONY : tests/test_cache.c.s
+
+tests/test_descensoGradiente.obj: tests/test_descensoGradiente.c.obj
+.PHONY : tests/test_descensoGradiente.obj
+
+# target to build an object file
+tests/test_descensoGradiente.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_descensoGradiente.dir\build.make CMakeFiles/test_descensoGradiente.dir/tests/test_descensoGradiente.c.obj
+.PHONY : tests/test_descensoGradiente.c.obj
+
+tests/test_descensoGradiente.i: tests/test_descensoGradiente.c.i
+.PHONY : tests/test_descensoGradiente.i
+
+# target to preprocess a source file
+tests/test_descensoGradiente.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_descensoGradiente.dir\build.make CMakeFiles/test_descensoGradiente.dir/tests/test_descensoGradiente.c.i
+.PHONY : tests/test_descensoGradiente.c.i
+
+tests/test_descensoGradiente.s: tests/test_descensoGradiente.c.s
+.PHONY : tests/test_descensoGradiente.s
+
+# target to generate assembly for a file
+tests/test_descensoGradiente.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_descensoGradiente.dir\build.make CMakeFiles/test_descensoGradiente.dir/tests/test_descensoGradiente.c.s
+.PHONY : tests/test_descensoGradiente.c.s
 
 tests/test_layer.obj: tests/test_layer.c.obj
 .PHONY : tests/test_layer.obj
@@ -470,6 +544,30 @@ tests/test_network.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_network.dir\build.make CMakeFiles/test_network.dir/tests/test_network.c.s
 .PHONY : tests/test_network.c.s
 
+tests/test_training.obj: tests/test_training.c.obj
+.PHONY : tests/test_training.obj
+
+# target to build an object file
+tests/test_training.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_training.dir\build.make CMakeFiles/test_training.dir/tests/test_training.c.obj
+.PHONY : tests/test_training.c.obj
+
+tests/test_training.i: tests/test_training.c.i
+.PHONY : tests/test_training.i
+
+# target to preprocess a source file
+tests/test_training.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_training.dir\build.make CMakeFiles/test_training.dir/tests/test_training.c.i
+.PHONY : tests/test_training.c.i
+
+tests/test_training.s: tests/test_training.c.s
+.PHONY : tests/test_training.s
+
+# target to generate assembly for a file
+tests/test_training.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_training.dir\build.make CMakeFiles/test_training.dir/tests/test_training.c.s
+.PHONY : tests/test_training.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -481,10 +579,12 @@ help:
 	@echo ... NeuralNetwork
 	@echo ... test_activation
 	@echo ... test_cache
+	@echo ... test_descensoGradiente
 	@echo ... test_layer
 	@echo ... test_loss
 	@echo ... test_matrix
 	@echo ... test_network
+	@echo ... test_training
 	@echo ... src/activation.obj
 	@echo ... src/activation.i
 	@echo ... src/activation.s
@@ -500,12 +600,18 @@ help:
 	@echo ... src/network.obj
 	@echo ... src/network.i
 	@echo ... src/network.s
+	@echo ... src/training.obj
+	@echo ... src/training.i
+	@echo ... src/training.s
 	@echo ... tests/test_activation.obj
 	@echo ... tests/test_activation.i
 	@echo ... tests/test_activation.s
 	@echo ... tests/test_cache.obj
 	@echo ... tests/test_cache.i
 	@echo ... tests/test_cache.s
+	@echo ... tests/test_descensoGradiente.obj
+	@echo ... tests/test_descensoGradiente.i
+	@echo ... tests/test_descensoGradiente.s
 	@echo ... tests/test_layer.obj
 	@echo ... tests/test_layer.i
 	@echo ... tests/test_layer.s
@@ -518,6 +624,9 @@ help:
 	@echo ... tests/test_network.obj
 	@echo ... tests/test_network.i
 	@echo ... tests/test_network.s
+	@echo ... tests/test_training.obj
+	@echo ... tests/test_training.i
+	@echo ... tests/test_training.s
 .PHONY : help
 
 

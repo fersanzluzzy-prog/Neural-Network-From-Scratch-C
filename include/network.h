@@ -21,4 +21,6 @@ struct matrix *forwardRed(struct network *red, struct matrix *entrada);
 
 int backpropRed(struct network *red, struct matrix resReales, struct matrix resCorrectos);
 
+int descensoDeGradiente(struct network *red, float factorAprendizaje);
+
 #endif

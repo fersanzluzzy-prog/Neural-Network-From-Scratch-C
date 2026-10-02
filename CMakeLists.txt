@@ -19,6 +19,7 @@ add_library(NeuralNetwork
     src/activation.c
     src/network.c
     src/loss.c
+    src/training.c
 
 )
 
@@ -45,3 +46,9 @@ target_link_libraries(test_cache NeuralNetwork)
 
 add_executable(test_loss tests/test_loss.c)
 target_link_libraries(test_loss NeuralNetwork)
+
+add_executable(test_descensoGradiente tests/test_descensoGradiente.c)
+target_link_libraries(test_descensoGradiente NeuralNetwork)
+
+add_executable(test_training tests/test_training.c)
+target_link_libraries(test_training NeuralNetwork)

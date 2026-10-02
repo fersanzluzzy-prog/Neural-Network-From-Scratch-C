@@ -105,9 +105,22 @@ int backpropRed(struct network *red, struct matrix resReales, struct matrix resC
             red->capas[i]->gradientes->dL_db = malloc(sizeof(struct matrix));
             red->capas[i]->gradientes->dL_dw = malloc(sizeof(struct matrix));
             red->capas[i]->gradientes->dL_dx = malloc(sizeof(struct matrix));    
-        
+            
+            //caso: solo 1 capa (puto test de chatgpt)
+            if(red->numeroCapas == 1){
+                //dL_da
+                crearMatriz(&dL_da, resReales.fil, resReales.col);
+                mseDerivada(resReales, resCorrectos, dL_da);
+
+                //dL_dx
+                crearMatriz(&dL_dx, red->entradas->fil, red->entradas->col);
+
+                //x
+                crearMatriz(&x, red->entradas->fil, red->entradas->col);
+                copiarMatriz(red->entradas, x);
+            }            
             //ultima capa
-            if(i == red->numeroCapas - 1){
+            else if(i == red->numeroCapas - 1){
                 //dL_da
                 crearMatriz(&dL_da, resReales.fil, resReales.col);
                 mseDerivada(resReales, resCorrectos, dL_da);
@@ -150,9 +163,9 @@ int backpropRed(struct network *red, struct matrix resReales, struct matrix resC
                 copiarMatriz(red->cache[i-1]->a, x);
 
             }
-            
             //da_dz
-            crearMatriz(&da_dz, dL_da->fil, dL_da->col); 
+            crearMatriz(&da_dz, dL_da->fil, dL_da->col);
+
             activacion actv = red->capas[i]->activacion;
             if(actv == RELU){
                 reluDerivada(red->cache[i]->z, da_dz);
@@ -167,18 +180,15 @@ int backpropRed(struct network *red, struct matrix resReales, struct matrix resC
             //dL_dz = dl_da · da_dz
             crearMatriz(&dL_dz, dL_da->fil, dL_da->col);
             multiplicacionElemPorElem(dL_da, da_dz, dL_dz);
-
             //dL_dw = dL_dz x xT
             crearMatriz(&dL_dW, red->capas[i]->pesos->fil, red->capas[i]->pesos->col);
             crearMatriz(&xT, x->col, x->fil);
             transponerMatriz(x, xT);
             multiplicacionMatricial(dL_dz, xT, dL_dW);
-
             //dL_dx = wT x dL_dz
             crearMatriz(&wT, red->capas[i]->pesos->col, red->capas[i]->pesos->fil);
             transponerMatriz(red->capas[i]->pesos, wT);
             multiplicacionMatricial(wT, dL_dz, dL_dx);
-
             //dL_db = dL_dz
             //batches, lo voy a obviar hasta añadirlos
 
@@ -186,7 +196,6 @@ int backpropRed(struct network *red, struct matrix resReales, struct matrix resC
             copiarMatriz(dL_dz, red->capas[i]->gradientes->dL_db); //batches
             copiarMatriz(dL_dW, red->capas[i]->gradientes->dL_dw);
             copiarMatriz(dL_dx, red->capas[i]->gradientes->dL_dx);
-
             eliminarMatriz(&dL_da);
             eliminarMatriz(&da_dz);
             eliminarMatriz(&dL_dx);
@@ -200,7 +209,24 @@ int backpropRed(struct network *red, struct matrix resReales, struct matrix resC
     return 1;
 }
 
+int descensoDeGradiente(struct network *red, float factorAprendizaje){
+    for(int i=0; i<red->numeroCapas; i++){
+        struct matrix *pesos = red->capas[i]->pesos;
+        struct matrix *bias = red->capas[i]->bias;
 
+        struct matrix *dw = red->capas[i]->gradientes->dL_dw;
+        struct matrix *db = red->capas[i]->gradientes->dL_db;
+
+        for(int k=0; k<pesos->fil; k++){
+            bias->datos[k] = bias->datos[k] - (factorAprendizaje * db->datos[k]);
+            for(int j=0; j<pesos->col; j++){
+                int indice = k*pesos->col + j;
+                pesos->datos[indice] = pesos->datos[indice] - (factorAprendizaje * dw->datos[indice]);
+            }
+        }
+    }
+    return 0;
+}
 
 
 

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj.d"
   "CMakeFiles/NeuralNetwork.dir/src/network.c.obj"
   "CMakeFiles/NeuralNetwork.dir/src/network.c.obj.d"
+  "CMakeFiles/NeuralNetwork.dir/src/training.c.obj"
+  "CMakeFiles/NeuralNetwork.dir/src/training.c.obj.d"
   "libNeuralNetwork.a"
   "libNeuralNetwork.pdb"
 )

@@ -33,15 +33,16 @@ void eliminarLayer(struct layer **layer){
     if(layer == NULL || *layer == NULL){
         return;
     }
-
+ 
     eliminarMatriz(&(*layer)->pesos);
     eliminarMatriz(&(*layer)->bias);
-
+//SOLO SI ES DIFERENETE DE NULL LAS MATRICES ESTASASDKFASÑFLSJFLSAJFLÑSADFJÑSLDKFJSLFÑDK
     if((*layer)->gradientes != NULL){
 
-        eliminarMatriz(&(*layer)->gradientes->dL_dw);
-        eliminarMatriz(&(*layer)->gradientes->dL_db);
-        eliminarMatriz(&(*layer)->gradientes->dL_dx);
+        if((*layer)->gradientes->dL_dw != NULL){ eliminarMatriz(&(*layer)->gradientes->dL_dw);}
+        if((*layer)->gradientes->dL_db != NULL){ eliminarMatriz(&(*layer)->gradientes->dL_db);}
+        if((*layer)->gradientes->dL_dx != NULL){ eliminarMatriz(&(*layer)->gradientes->dL_dx);}
+
 
         free((*layer)->gradientes);
         (*layer)->gradientes = NULL;

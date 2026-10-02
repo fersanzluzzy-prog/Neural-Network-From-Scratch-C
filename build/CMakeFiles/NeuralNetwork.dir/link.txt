@@ -1,2 +1,2 @@
-C:\TDM-GCC-64\bin\ar.exe qc libNeuralNetwork.a CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj CMakeFiles/NeuralNetwork.dir/src/layer.c.obj CMakeFiles/NeuralNetwork.dir/src/activation.c.obj CMakeFiles/NeuralNetwork.dir/src/network.c.obj CMakeFiles/NeuralNetwork.dir/src/loss.c.obj
+C:\TDM-GCC-64\bin\ar.exe qc libNeuralNetwork.a CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj CMakeFiles/NeuralNetwork.dir/src/layer.c.obj CMakeFiles/NeuralNetwork.dir/src/activation.c.obj CMakeFiles/NeuralNetwork.dir/src/network.c.obj CMakeFiles/NeuralNetwork.dir/src/loss.c.obj CMakeFiles/NeuralNetwork.dir/src/training.c.obj
 C:\TDM-GCC-64\bin\ranlib.exe libNeuralNetwork.a

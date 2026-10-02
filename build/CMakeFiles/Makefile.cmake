@@ -58,4 +58,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_network.dir/DependInfo.cmake"
   "CMakeFiles/test_cache.dir/DependInfo.cmake"
   "CMakeFiles/test_loss.dir/DependInfo.cmake"
+  "CMakeFiles/test_descensoGradiente.dir/DependInfo.cmake"
+  "CMakeFiles/test_training.dir/DependInfo.cmake"
   )

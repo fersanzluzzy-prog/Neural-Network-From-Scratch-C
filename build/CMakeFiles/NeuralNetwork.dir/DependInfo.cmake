@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/loss.c" "CMakeFiles/NeuralNetwork.dir/src/loss.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/loss.c.obj.d"
   "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/matrix.c" "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/matrix.c.obj.d"
   "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/network.c" "CMakeFiles/NeuralNetwork.dir/src/network.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/network.c.obj.d"
+  "C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/src/training.c" "CMakeFiles/NeuralNetwork.dir/src/training.c.obj" "gcc" "CMakeFiles/NeuralNetwork.dir/src/training.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
