@@ -165,7 +165,7 @@ class TrainingViewer:
         self.fig.canvas.draw_idle()
 
     def start_animation(self):
-        if self.animation is not None:
+        if self.animation is not None and self.animation.event_source is not None:
             self.animation.event_source.stop()
 
         self.animation = FuncAnimation(
@@ -176,7 +176,6 @@ class TrainingViewer:
             repeat=False
         )
 
-        # Mantener referencia.
         self.fig._training_animation = self.animation
 
     def reset(self, _event):
@@ -189,7 +188,7 @@ class TrainingViewer:
             print(f"No se encuentra: {DEMO_EXE}")
             return
 
-        if self.animation is not None:
+        if self.animation is not None and self.animation.event_source is not None:
             self.animation.event_source.stop()
 
         print("Reiniciando entrenamiento...")
