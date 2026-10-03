@@ -7,5 +7,6 @@ C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/test_loss.dir
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/test_descensoGradiente.dir
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/test_training.dir
+C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/demo_training.dir
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/edit_cache.dir
 C:/Users/nsanz/Desktop/proyectos/Neural-Network-From-Scratch-C/build/CMakeFiles/rebuild_cache.dir

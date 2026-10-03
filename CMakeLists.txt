@@ -52,3 +52,10 @@ target_link_libraries(test_descensoGradiente NeuralNetwork)
 
 add_executable(test_training tests/test_training.c)
 target_link_libraries(test_training NeuralNetwork)
+
+add_executable(demo_training examples/demo_training.c)
+target_link_libraries(demo_training NeuralNetwork)
+
+if(NOT WIN32)
+    target_link_libraries(demo_training m)
+endif()

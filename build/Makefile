@@ -232,6 +232,43 @@ test_training/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_training.dir\build.make CMakeFiles/test_training.dir/build
 .PHONY : test_training/fast
 
+#=============================================================================
+# Target rules for targets named demo_training
+
+# Build rule for target.
+demo_training: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 demo_training
+.PHONY : demo_training
+
+# fast build rule for target.
+demo_training/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_training.dir\build.make CMakeFiles/demo_training.dir/build
+.PHONY : demo_training/fast
+
+examples/demo_training.obj: examples/demo_training.c.obj
+.PHONY : examples/demo_training.obj
+
+# target to build an object file
+examples/demo_training.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_training.dir\build.make CMakeFiles/demo_training.dir/examples/demo_training.c.obj
+.PHONY : examples/demo_training.c.obj
+
+examples/demo_training.i: examples/demo_training.c.i
+.PHONY : examples/demo_training.i
+
+# target to preprocess a source file
+examples/demo_training.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_training.dir\build.make CMakeFiles/demo_training.dir/examples/demo_training.c.i
+.PHONY : examples/demo_training.c.i
+
+examples/demo_training.s: examples/demo_training.c.s
+.PHONY : examples/demo_training.s
+
+# target to generate assembly for a file
+examples/demo_training.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_training.dir\build.make CMakeFiles/demo_training.dir/examples/demo_training.c.s
+.PHONY : examples/demo_training.c.s
+
 src/activation.obj: src/activation.c.obj
 .PHONY : src/activation.obj
 
@@ -577,6 +614,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... NeuralNetwork
+	@echo ... demo_training
 	@echo ... test_activation
 	@echo ... test_cache
 	@echo ... test_descensoGradiente
@@ -585,6 +623,9 @@ help:
 	@echo ... test_matrix
 	@echo ... test_network
 	@echo ... test_training
+	@echo ... examples/demo_training.obj
+	@echo ... examples/demo_training.i
+	@echo ... examples/demo_training.s
 	@echo ... src/activation.obj
 	@echo ... src/activation.i
 	@echo ... src/activation.s
