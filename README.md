@@ -14,7 +14,7 @@ cmake --build build
 
 > **Estado:** primera versión completada.  
 > Esta versión se considera una base funcional sobre la que seguiré desarrollando y experimentando con la librería.
-
+```
 ---
 
 ## ¿Qué contiene el proyecto?
