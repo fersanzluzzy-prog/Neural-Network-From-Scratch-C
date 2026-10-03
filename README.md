@@ -118,3 +118,5 @@ Implemented features:
 - [ ] Backpropagation
 - [ ] Gradient descent
 - [ ] Performance optimizations
+
+.
