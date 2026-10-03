@@ -111,8 +111,8 @@ int eliminarCacheLayer(struct cache **c){
         return 0;
     }
     
-    eliminarMatriz(&(*c)->a);
-    eliminarMatriz(&(*c)->z);
+    if((*c)->a != NULL){eliminarMatriz(&(*c)->a);}
+    if((*c)->z != NULL){eliminarMatriz(&(*c)->z);}
     free(*c);
     *c = NULL;
     return 0;

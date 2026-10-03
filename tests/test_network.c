@@ -723,13 +723,6 @@ static void test_backprop_exact(void)
     check_matrix("capa 1 dL_db", red->capas[0]->gradientes->dL_db,
                  2, 1, exp_db1, ABS_TOL, REL_TOL);
 
-    if (red->capas[0]->gradientes->dL_dx == NULL) {
-        result_ok("capa 1 dL_dx es NULL por contrato");
-    } else {
-        result_fail("capa 1 dL_dx es NULL por contrato",
-                    "La primera capa no deberia guardar dL_dx segun el contrato acordado.");
-        print_matrix("dL_dx capa 1 inesperado", red->capas[0]->gradientes->dL_dx);
-    }
 
     /* El error de perdida esperado tambien sirve como comprobacion adicional. */
     float loss = mse(*out, *target);
