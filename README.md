@@ -2,6 +2,16 @@
 
 Implementación de una red neuronal desde cero en **C**, sin utilizar frameworks de deep learning. El objetivo del proyecto ha sido entender y construir manualmente las piezas fundamentales que intervienen en el funcionamiento de una red neuronal, desde las operaciones matriciales hasta el entrenamiento mediante backpropagation y descenso de gradiente.
 
+## Uso
+
+### 1. Compilar el proyecto
+
+El proyecto utiliza CMake y MinGW para la compilación. Desde la carpeta raíz del repositorio:
+
+```bash
+cmake -S . -B build -G "MinGW Makefiles"
+cmake --build build
+
 > **Estado:** primera versión completada.  
 > Esta versión se considera una base funcional sobre la que seguiré desarrollando y experimentando con la librería.
 
